@@ -15201,7 +15201,7 @@ var AblePlayerInstances = [];
 (function ($) {
 	AblePlayer.prototype.getSupportedLangs = function() {
 		// returns an array of languages for which AblePlayer has translation tables
-		var langs = ['ca','cs','da','de','en','es','fr','he','id','it','ja','nb','nl','pt','pt-br','sv','tr','zh-tw'];
+		var langs = ['ca','cs','da','de','en','es','fr','he','id','it','ja','nb','nl','pl','pt','pt-br','sv','tr','zh-tw'];
 		return langs;
 	};
 

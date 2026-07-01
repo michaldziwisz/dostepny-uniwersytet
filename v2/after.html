@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 	<meta charset="utf-8">
-	<title>Accessible University Mock Site - Accessible Version</title>
+	<title>Dostępny Uniwersytet — makieta witryny — wersja dostępna</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<style type="text/css">
@@ -209,9 +209,9 @@
 		function showCaptcha() { 
 			// create an array with a few questions 
 			var questions = new Array();
-			questions[0] = 'If a cow is purple, what color is it?';
-			questions[1] = '2 plus two equals ';
-			questions[2] = 'Sunday, bird, Friday. Which of these is not a day?';
+			questions[0] = 'Jeśli krowa jest fioletowa, jakiego jest koloru?';
+			questions[1] = '2 plus dwa równa się ';
+			questions[2] = 'Niedziela, ptak, piątek. Które z nich nie jest dniem?';
 			var question = questions[Math.floor(Math.random() * questions.length)];
 			document.getElementById('captcha_label').innerHTML = question;
 		}
@@ -242,39 +242,39 @@
 			var numErrors = 0;
 			var errorMessages = new Array();
 			if (userName==null||userName=="") { 
-				errorMessages[numErrors] = 'Name is required';
+				errorMessages[numErrors] = 'Imię i nazwisko jest wymagane';
 				var firstBadField = 'name';
 				numErrors++;
 			}
 			if (userEmail==null||userEmail=="") { 
-				errorMessages[numErrors] = 'Email is required';
+				errorMessages[numErrors] = 'Adres e-mail jest wymagany';
 				if (numErrors == 0) var firstBadField = 'email';
 				numErrors++;
 			}
 			else if (validateEmail(userEmail) == false) { 
-				errorMessages[numErrors] = 'You entered an invalid email address';
+				errorMessages[numErrors] = 'Wprowadzono nieprawidłowy adres e-mail';
 				if (numErrors == 0) var firstBadField = 'email';
 				numErrors++;
 			}
 			if (captchaAnswer==null||captchaAnswer=="") { 
-				errorMessages[numErrors] = 'You must answer the security question at the bottom of the form';
+				errorMessages[numErrors] = 'Musisz odpowiedzieć na pytanie zabezpieczające na dole formularza';
 				if (numErrors == 0) var firstBadField = 'captcha_answer';
 				numErrors++;
 			}			
 			if (numErrors > 0) { 
 				if (numErrors == 1) { 
-					var errorMessage = 'ERROR: ' + errorMessages[0];
-					errorMessage += '. Please correct this error and submit again.';
+					var errorMessage = 'BŁĄD: ' + errorMessages[0];
+					errorMessage += '. Popraw ten błąd i wyślij ponownie.';
 				}
 				else { 
-					var errorMessage = '<p>There were ' + numErrors + ' errors '; 
-					errorMessage += 'in the information you entered:</p> ';
+					var errorMessage = '<p>W podanych informacjach wystąpiły błędy (' + numErrors + '): '; 
+					errorMessage += '</p> ';
 					errorMessage += '<ul>';
 					for (i=0;i<numErrors;i++) { 
 						errorMessage += '<li>' + errorMessages[i] + '</li>';
 					}
 					errorMessage += '</ul>';
-					errorMessage += '<p>Please correct these errors and submit again.</p>';
+					errorMessage += '<p>Popraw te błędy i wyślij ponownie.</p>';
 				}
 				showError(errorMessage);
 				//set focus to the first field that requires correcting
@@ -296,31 +296,31 @@
 <div id="content" class="yui3-skin-sam">
 
 <div role="banner">
-	<h1><img id="logo" src="images/au123456789.gif" alt="Accessible University" 
+	<h1><img id="logo" src="images/au123456789.gif" alt="Dostępny Uniwersytet" 
 	width="441" height="90"/></h1>
 </div>
 
 <!--YUI nav menu -->
-<div id="menu" role="navigation" aria-label="Main menu">
+<div id="menu" role="navigation" aria-label="Menu główne">
 <div id="menu-1" class="yui3-menu yui3-menu-horizontal yui3-menubuttonnav" role="navigation"><!-- Bounding box -->
 	<div class="yui3-menu-content"><!-- Content box -->
 		<ul>
 			<li>
-				<a class="yui3-menu-label" href="#submenu-about"><em>About</em></a><!-- Submenu label -->
+				<a class="yui3-menu-label" href="#submenu-about"><em>O nas</em></a><!-- Submenu label -->
 				<div id="submenu-about" class="yui3-menu"><!-- Bounding box -->
 					<div class="yui3-menu-content"><!-- Content box -->
 						<ul>
 							<li class="yui3-menuitem"><!-- Bounding box -->
-								<a href="#" class="yui3-menuitem-content">News</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Governance</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Diversity</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Contact Us</a>
+								<a href="#" class="yui3-menuitem-content">Aktualności</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Władze</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Różnorodność</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Kontakt</a>
 							</li>
 						</ul>
 					</div>
@@ -328,21 +328,21 @@
 			</li>
 
 			<li>
-				<a class="yui3-menu-label" href="#submenu-academics"><em>Academics</em></a>
+				<a class="yui3-menu-label" href="#submenu-academics"><em>Nauka</em></a>
 				<div id="submenu-academics" class="yui3-menu">
 					<div class="yui3-menu-content">
 						<ul>
 							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Degree Programs</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">AU Faculty</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Distance Learning</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Libraries</a>
+								<a href="#" class="yui3-menuitem-content">Kierunki studiów</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Kadra AU</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Nauczanie zdalne</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Biblioteki</a>
 							</li>
 						</ul>
 					</div>
@@ -350,21 +350,21 @@
 			</li>
 
 			<li>
-				<a class="yui3-menu-label" href="#submenu-admissions"><em>Admissions</em></a>
+				<a class="yui3-menu-label" href="#submenu-admissions"><em>Rekrutacja</em></a>
 				<div id="submenu-admissions" class="yui3-menu">
 					<div class="yui3-menu-content">
 						<ul>
 							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Undergraduate</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Graduate</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Tuition</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Financial Aid</a>
+								<a href="#" class="yui3-menuitem-content">Studia licencjackie</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Studia magisterskie</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Czesne</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Pomoc finansowa</a>
 							</li>
 						</ul>
 					</div>
@@ -372,17 +372,17 @@
 			</li>
 
 			<li>
-				<a class="yui3-menu-label" href="#submenu-visitors"><em>Visitors</em></a>
+				<a class="yui3-menu-label" href="#submenu-visitors"><em>Dla odwiedzających</em></a>
 				<div id="submenu-visitors" class="yui3-menu">
 					<div class="yui3-menu-content">
 						<ul>
 							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Events</a>
-							</li>
-							<li class="yui3-menuitem">
-								<a href="#" class="yui3-menuitem-content">Campus Map</a>
-							</li>
-							<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Wydarzenia</a>
+								</li>
+								<li class="yui3-menuitem">
+								<a href="#" class="yui3-menuitem-content">Mapa kampusu</a>
+								</li>
+								<li class="yui3-menuitem">
 								<a href="#" class="yui3-menuitem-content">Parking</a>
 							</li>
 						</ul>
@@ -403,22 +403,22 @@
 
 <div id="main" role="main">
 
-<h2>Welcome!</h2>
+<h2>Witamy!</h2>
 <div class="section">
-	<img src="images/p_au_g.jpg" alt="photo of a girl sitting cross-legged on a green lawn, reading a book"/>
-	<p>Accessible University (AU) is a fictional university, and this is its 
-	fictional home page. This page is designed to demonstrate a variety of 
-	common web design problems that result in visitors with disabilities 
-	being unable to access the content or features of a web page. 
-	Although the heading at the top of this section of the page 
-	suggests that AU may be a welcoming institution, 
-	the inaccessible design of this page sends the opposite message.
+	<img src="images/p_au_g.jpg" alt="zdjęcie dziewczyny siedzącej ze skrzyżowanymi nogami na zielonym trawniku i czytającej książkę"/>
+	<p>Dostępny Uniwersytet (AU) to fikcyjna uczelnia, a to jest jej 
+	fikcyjna strona główna. Strona ta została zaprojektowana, aby zademonstrować różnorodne 
+	powszechne błędy projektowania stron internetowych, przez które osoby z niepełnosprawnościami 
+	nie mogą korzystać z treści lub funkcji strony. 
+	Choć nagłówek na górze tej sekcji strony 
+	sugeruje, że AU może być przyjazną instytucją, 
+	niedostępny projekt tej strony przekazuje przeciwny komunikat.
 	</p> 
 </div>
 
 <h2 lang="es">Bienvenido!</h2>
 <div class="section">
-	<img src="images/p_au_c.jpg" alt="A man and woman talk as they exit the building, books in hand"/>
+	<img src="images/p_au_c.jpg" alt="Mężczyzna i kobieta rozmawiają, wychodząc z budynku z książkami w rękach"/>
 	<p lang="es">Accesible Universidad (UA) es una universidad ficticia, y esta es su
 	página de ficción. Esta página está diseñada para demostrar una variedad de
 	común de diseño web que se traducen en problemas de los visitantes con discapacidad
@@ -429,17 +429,17 @@
 	</p>
 </div>
 
-<h2>Can you spot the barriers?</h2>
+<h2>Czy potrafisz dostrzec bariery?</h2>
 <div class="section">
-	<p>This page is an improved version, with 17 accessibility problems corrected. 
-	Details about all known problems are on the <a href="problems.html">List of Problems</a> page. 
-	To see the original problems, consult the <a href="before.html">Inaccessible version</a>.
+	<p>Ta strona to ulepszona wersja, w której naprawiono 17 problemów z dostępnością. 
+	Szczegóły dotyczące wszystkich znanych problemów znajdziesz na stronie <a href="problems.html">Lista problemów</a>. 
+	Aby zobaczyć oryginalne problemy, przejdź do <a href="before.html">wersji niedostępnej</a>.
 	</p>
 </div>
 
 
-<h2>AU Enrollment Trends</h2>
-<table id="enrollment" summary="This table shows enrollment over a two-year period by subject and gender. The academic years 2007-08 and 2008-09 are arranged in columns, with six subjects arranged as columns nested within the year columns. Total enrollment, and male and female enrollment percentages, are arranged in rows.">
+<h2>Trendy w liczbie studentów AU</h2>
+<table id="enrollment" summary="Ta tabela przedstawia liczbę studentów w okresie dwóch lat według przedmiotu i płci. Lata akademickie 2007-08 i 2008-09 ułożone są w kolumnach, a sześć przedmiotów jako kolumny zagnieżdżone w kolumnach lat. Całkowita liczba studentów oraz odsetek mężczyzn i kobiet ułożone są w wierszach.">
 <tr>
 	<td style="width:6em">&nbsp;</td>
 	<th scope="col" id="y07-08" colspan="6">2007-08</th>
@@ -447,21 +447,21 @@
 </tr>
 <tr>
    <td>&nbsp;</td>
-	<th scope="col" id="subj-cs1"><abbr title="Computer Science">CS</abbr></th>
-	<th scope="col" id="subj-eng1"><abbr title="English">Eng</abbr></th>
-	<th scope="col" id="subj-eco1"><abbr title="Economics">Eco</abbr></th>
-	<th scope="col" id="subj-phy1"><abbr title="Physics">Phy</abbr></th>
-	<th scope="col" id="subj-psy1"><abbr title="Psychology">Psy</abbr></th>
-	<th scope="col" id="subj-spa1"><abbr title="Spanish">Spa</abbr></th>
-	<th scope="col" id="subj-cs2"><abbr title="Computer Science">CS</abbr></th>
-	<th scope="col" id="subj-eng2"><abbr title="English">Eng</abbr></th>
-	<th scope="col" id="subj-eco2"><abbr title="Economics">Eco</abbr></th>
-	<th scope="col" id="subj-phy2"><abbr title="Physics">Phy</abbr></th>
-	<th scope="col" id="subj-psy2"><abbr title="Psychology">Psy</abbr></th>
-	<th scope="col" id="subj-spa2"><abbr title="Spanish">Spa</abbr></th>
+	<th scope="col" id="subj-cs1"><abbr title="Informatyka">Inf</abbr></th>
+	<th scope="col" id="subj-eng1"><abbr title="Filologia angielska">Ang</abbr></th>
+	<th scope="col" id="subj-eco1"><abbr title="Ekonomia">Eko</abbr></th>
+	<th scope="col" id="subj-phy1"><abbr title="Fizyka">Fiz</abbr></th>
+	<th scope="col" id="subj-psy1"><abbr title="Psychologia">Psy</abbr></th>
+	<th scope="col" id="subj-spa1"><abbr title="Filologia hiszpańska">Hisz</abbr></th>
+	<th scope="col" id="subj-cs2"><abbr title="Informatyka">Inf</abbr></th>
+	<th scope="col" id="subj-eng2"><abbr title="Filologia angielska">Ang</abbr></th>
+	<th scope="col" id="subj-eco2"><abbr title="Ekonomia">Eko</abbr></th>
+	<th scope="col" id="subj-phy2"><abbr title="Fizyka">Fiz</abbr></th>
+	<th scope="col" id="subj-psy2"><abbr title="Psychologia">Psy</abbr></th>
+	<th scope="col" id="subj-spa2"><abbr title="Filologia hiszpańska">Hisz</abbr></th>
 </tr>
 <tr>
-	<th scope="row" id="total">Total</th>
+	<th scope="row" id="total">Razem</th>
 	<!--2007-08 data-->
 	<td headers="y07-08 subj-cs1 total">84</td>
 	<td headers="y07-08 subj-eng1 total">126</td>
@@ -478,7 +478,7 @@
 	<td headers="y08-09 subj-spa2 total">64</td>
 </tr>
 <tr>
-	<th scope="row" id="male">% Male</th>
+	<th scope="row" id="male">% Mężczyźni</th>
 	<!--2007-08 data-->
 	<td headers="y07-08 subj-cs1 male">89</td>
 	<td headers="y07-08 subj-eng1 male">84</td>
@@ -495,7 +495,7 @@
 	<td headers="y08-09 subj-spa2 male">48</td>
 </tr>
 <tr>
-	<th scope="row" id="female">% Female</th>
+	<th scope="row" id="female">% Kobiety</th>
 	<!--2007-08 data-->
 	<td headers="y07-08 subj-cs1 female">11</td>
 	<td headers="y07-08 subj-eng1 female">16</td>
@@ -515,78 +515,78 @@
 
 </div><!--end #main-->
 
-<div id="sidebar" role="complementary" aria-label="Application Form">
+<div id="sidebar" role="complementary" aria-label="Formularz zgłoszeniowy">
 
-<h2 id="applyNow">Apply Now!</h2>
+<h2 id="applyNow">Aplikuj teraz!</h2>
 
 <form action="#" method="post" onsubmit="return validate(this)">
 	<div class="required">
-		<label for="name">Name: (required)</label><br/>
+		<label for="name">Imię i nazwisko: (wymagane)</label><br/>
 		<input id="name" type="text" name="name" required/>
 	</div>
 	<div class="required">
-		<label for="email">Email: (required)</label><br/>
+		<label for="email">E-mail: (wymagane)</label><br/>
 		<input id="email" type="text" name="email" required/>
 	</div>
 	<div>
-		<label for="city">City:</label><br/>
+		<label for="city">Miejscowość:</label><br/>
 		<input type="text" name="city" id="city"/>
 	</div>
 	<div>
-		<label for="state">State/Province:</label><br/>
+		<label for="state">Województwo/Region:</label><br/>
 		<input type="text" name="state" id="state"/>
 	</div>
 	<div>
-		<label for="zip">Zip/Postal Code:</label> <br/>
+		<label for="zip">Kod pocztowy:</label> <br/>
 		<input type="text" name="zip" id="zip"/>
 	</div>
 	<div>
-		<label for="country">Country:</label><br/>
+		<label for="country">Kraj:</label><br/>
 		<input type="text" name="country" id="country"/>
 	</div>
 
 	<fieldset id="majors">
-		<legend>Desired major(s):</legend>
+		<legend>Wybrane kierunki:</legend>
 		<div class="major">
-			<label for="cs">Computer Science</label> 
+			<label for="cs">Informatyka</label> 
 			<input type="checkbox" name="major_cs" id="cs"/>
 		</div>
 		<div class="major">
-			<label for="eng">Engineering</label> 
+			<label for="eng">Inżynieria</label> 
 			<input type="checkbox" name="major_eng" id="eng"/>
 		</div>
 		<div class="major">
-			<label for="eco">Economics</label> 
+			<label for="eco">Ekonomia</label> 
 			<input type="checkbox" name="major_econ" id="eco"/>
 		</div>
 		<div class="major">
-			<label for="phy">Physics</label> 
+			<label for="phy">Fizyka</label> 
 			<input type="checkbox" name="major_phy" id="phy"/>
 		</div>
 		<div class="major">
-			<label for="psy">Psychology</label> 
+			<label for="psy">Psychologia</label> 
 			<input type="checkbox" name="major_psy" id="psy"/>
 		</div>
 		<div class="major">
-			<label for="spa">Spanish</label>
+			<label for="spa">Hiszpański</label>
 			<input type="checkbox" name="major_sp" id="spa"/>
 		</div>
 	</fieldset>
 
 	<div id="captcha">
-		<h2>Security Question</h2>
+		<h2>Pytanie zabezpieczające</h2>
 		<label id="captcha_label" for="captcha_answer"></label>
 		<input type="text" id="captcha_answer" name="captcha_answer" required>
 	</div>
 	
 	<div>
-		<input type="submit" name="submit" value="Submit" />
+		<input type="submit" name="submit" value="Wyślij" />
 	</div>
 </form>
 
 </div><!--end #application-->
 <div id="footer" role="contentinfo">
-Copyright &copy;2002 - 2015 University of Washington. Permission is granted to copy these materials for educational, noncommercial purposes provided the source is acknowledged. This product was originally developed with support from the National Institute on Disability and Rehabilitation Research of the U.S. Department of Education (grant #H133D010306), and was updated in 2009 with support from the National Science Foundation (grant #CNS-054061S). The contents do not necessarily represent the policies of the U.S. federal government, and you should not assume their endorsement. 
+Copyright &copy;2002 - 2015 University of Washington. Zezwala się na kopiowanie tych materiałów w celach edukacyjnych, niekomercyjnych, pod warunkiem podania źródła. Ten produkt został pierwotnie opracowany przy wsparciu National Institute on Disability and Rehabilitation Research amerykańskiego Department of Education (grant #H133D010306), a w 2009 roku został zaktualizowany przy wsparciu National Science Foundation (grant #CNS-054061S). Treść nie musi odzwierciedlać polityki rządu federalnego Stanów Zjednoczonych i nie należy zakładać, że stanowi ona jego poparcie. 
 </div> 
 
 </div><!--end #content-->

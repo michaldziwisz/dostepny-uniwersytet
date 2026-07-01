@@ -9,9 +9,9 @@ $(document).ready(function(event) {
 
   $('#submit').on('click',function(event) {
     // Submitting the form always returns a vague error message
-    var heading = $('<div>').addClass('errorHeading').text('ERROR');
+    var heading = $('<div>').addClass('errorHeading').text('BŁĄD');
     var errorMsg = $('<p>')
-      .text('Your form has errors. Please correct them and resubmit.');
+      .text('Twój formularz zawiera błędy. Popraw je i wyślij ponownie.');
     $('#error').html(heading).append(errorMsg).show();
     event.preventDefault();
   });

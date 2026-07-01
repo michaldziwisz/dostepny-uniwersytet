@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>Accessible University 2.0: List of Accessibility Problems</title>
+	<title>Accessible University 2.0: Lista problemów z dostępnością</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 	<style type="text/css">
@@ -80,75 +80,75 @@
 	</a>
 </div>
 
-<h1>Accessible University: List of Accessibility Problems</h1>
+<h1>Dostępny Uniwersytet: Lista problemów z dostępnością</h1>
 
-<p>This page summarizes the accessibility problems demonstrated on the Accessible University (AU) home page 
-(<a href="before.html">Inaccessible Version)</a>. With each problem, a solution is proposed.  
- To see these accessibility solutions implemented, view the AU Home Page <a href="after.html">Accessible Version</a>.</p>
+<p>Ta strona podsumowuje problemy z dostępnością zademonstrowane na stronie głównej Dostępnego Uniwersytetu (AU) 
+(<a href="before.html">Wersja niedostępna)</a>. Dla każdego problemu zaproponowano rozwiązanie.  
+ Aby zobaczyć wdrożone rozwiązania dostępnościowe, obejrzyj stronę główną AU <a href="after.html">Wersja dostępna</a>.</p>
  
 <ol>
 
-<li><span class="label">No headings</span>. Headings and subheadings help organize documents, 
-including web pages, so that they are easy to read and understand. Visually, this 
-page includes several headings. However, these headings are not marked up explicitly 
-as headings using HTML heading tags (e.g., <span class="element">&lt;h1&gt;</span>, <span class="element">&lt;h2&gt;</span>). Instead, they are simply 
-marked up as plain text that is bold and large. If HTML heading tags are used, 
-screen reader users have access to this structural information. This helps them to gain 
-a better understanding of how the document is organized. It also helps with navigation: 
-Screen reader users can jump between headings in a document using a single keystroke, 
-which is much more efficient than reading the entire page from beginning to end. 
+<li><span class="label">Brak nagłówków</span>. Nagłówki i podnagłówki pomagają organizować dokumenty, 
+w tym strony WWW, tak aby były łatwe do czytania i zrozumienia. Wizualnie ta 
+strona zawiera kilka nagłówków. Jednak nagłówki te nie są oznaczone jawnie 
+jako nagłówki za pomocą znaczników nagłówków HTML (np. <span class="element">&lt;h1&gt;</span>, <span class="element">&lt;h2&gt;</span>). Zamiast tego są po prostu 
+oznaczone jako zwykły tekst, pogrubiony i duży. Jeśli używane są znaczniki nagłówków HTML, 
+użytkownicy czytnika ekranu mają dostęp do tej informacji strukturalnej. Pomaga im to uzyskać 
+lepsze zrozumienie tego, jak dokument jest zorganizowany. Pomaga to również w nawigacji: 
+Użytkownicy czytnika ekranu mogą przeskakiwać między nagłówkami w dokumencie za pomocą pojedynczego naciśnięcia klawisza, 
+co jest znacznie wydajniejsze niż czytanie całej strony od początku do końca. 
 </li>
 
-<li><span class="label">No alternate text on informative images</span>. 
-There are several images on this page. Some are decorative, 
-but three of the images (the logo and the two photographs) communicate information. 
-Whenever an image communicates information, it requires alternate text 
-so that users who are unable to see the image have access to its content. 
+<li><span class="label">Brak tekstu alternatywnego na obrazach informacyjnych</span>. 
+Na tej stronie jest kilka obrazów. Niektóre są dekoracyjne, 
+ale trzy z obrazów (logo i dwie fotografie) przekazują informację. 
+Zawsze, gdy obraz przekazuje informację, wymaga tekstu alternatywnego, 
+aby użytkownicy, którzy nie mogą zobaczyć obrazu, mieli dostęp do jego treści. 
 </li>
 
-<li><span class="label">Missing or excessive alternate text on decorative images</span>. 
-Screen reader users do not need access to images whose purpose is solely decorative. 
-The example on this page is the horizontal line that appears multiple times on the page. 
-The current <span class="attribute">alt</span> attribute for this image is &quot;horizontal line graphic&quot;, 
-which is unnecessary information, and can be especially cumbersome to listen to 
-when it's repeated multiple times on a page. One solution is to present all 
-decorative images as background images in Cascading Style Sheets (CSS). Another is 
-to provide an empty <span class="attribute">alt</span> attribute (<span class="code">alt=&quot;&quot;</span>) for all decorative images. 
-This is standard markup that instructs screen readers to ignore the image. 
-If the <span class="attribute">alt</span> attribute was missing entirely, screen readers don't know whether the 
-image is informative or decorative, so they typically provide information about the image 
-(such as the path and filename) in hopes that this will contain information that 
-may help the user to understand the image's function and/or content. In a page 
-with many decorative images, this can become very cumbersome.</li>
+<li><span class="label">Brakujący lub nadmierny tekst alternatywny na obrazach dekoracyjnych</span>. 
+Użytkownicy czytnika ekranu nie potrzebują dostępu do obrazów, których celem jest wyłącznie dekoracja. 
+Przykładem na tej stronie jest pozioma linia, która pojawia się wielokrotnie na stronie. 
+Obecny atrybut <span class="attribute">alt</span> dla tego obrazu to &quot;horizontal line graphic&quot;, 
+co jest zbędną informacją i może być szczególnie uciążliwe do słuchania, 
+gdy jest powtarzane wielokrotnie na stronie. Jednym z rozwiązań jest przedstawienie wszystkich 
+obrazów dekoracyjnych jako obrazów tła w kaskadowych arkuszach stylów (CSS). Innym jest 
+podanie pustego atrybutu <span class="attribute">alt</span> (<span class="code">alt=&quot;&quot;</span>) dla wszystkich obrazów dekoracyjnych. 
+Jest to standardowy kod, który instruuje czytniki ekranu, aby zignorowały obraz. 
+Gdyby atrybut <span class="attribute">alt</span> był całkowicie pominięty, czytniki ekranu nie wiedzą, czy 
+obraz jest informacyjny czy dekoracyjny, więc zazwyczaj podają informacje o obrazie 
+(takie jak ścieżka i nazwa pliku) w nadziei, że będą one zawierać informacje, które 
+mogą pomóc użytkownikowi zrozumieć funkcję i/lub treść obrazu. Na stronie 
+z wieloma obrazami dekoracyjnymi może to stać się bardzo uciążliwe.</li>
 
-<li><span class="label">Images used to represent text</span>. Whenever possible, it is best to 
-present text using text, rather than images. 
-Text downloads in a fraction of the time that it takes images to download. 
-It is also much easier for web developers to edit plain text content. 
-For users who need to enlarge content in order to see it clearly, 
-text scales without loss of clarity when enlarged (e.g., using Ctrl + in most Windows browsers, 
-or Apple + in Mac browsers). Depending on the browser, images of text 
-either do not enlarge at all, or they become pixilated and difficult to read as they get larger. 
+<li><span class="label">Obrazy użyte zamiast tekstu</span>. Kiedy tylko to możliwe, najlepiej jest 
+przedstawiać tekst za pomocą tekstu, a nie obrazów. 
+Tekst pobiera się w ułamku czasu, jaki zajmuje pobranie obrazów. 
+Twórcom stron WWW jest również znacznie łatwiej edytować treść w postaci zwykłego tekstu. 
+Dla użytkowników, którzy muszą powiększyć treść, aby wyraźnie ją zobaczyć, 
+tekst skaluje się bez utraty czytelności po powiększeniu (np. za pomocą Ctrl + w większości przeglądarek Windows, 
+lub Apple + w przeglądarkach Mac). W zależności od przeglądarki, obrazy tekstu 
+albo w ogóle się nie powiększają, albo stają się rozpikselowane i trudne do odczytania w miarę powiększania. 
 </li>
 
-<li><span class="label">Insufficient color contrast</span>. The navigation menu is very difficult 
-to see due to the choice of foreground and background colors. Designers should always 
-be sure to provide high contrast between the foreground and background colors.</li>
+<li><span class="label">Niewystarczający kontrast kolorów</span>. Menu nawigacyjne jest bardzo trudne 
+do zobaczenia z powodu wyboru kolorów pierwszego planu i tła. Projektanci powinni zawsze 
+zadbać o zapewnienie wysokiego kontrastu między kolorami pierwszego planu a tłem.</li>
  
-<li><p><span class="label">Menu inaccessible to keyboard users</span>. The navigation menu on this page 
-is dynamic: Sub-menus appear when users hover over the menus with a mouse.
-However, these same menus do not appear for non-mousers. If a user navigates to the menu 
-by pressing tab, or using a touch screen or stylus, the sub-menus do not appear; 
-nor do the main menu items send the user to a new page. They simply don't work. 
-There are many examples of menu systems that have been developed with accessibility in mind. Terrill Thompson, Technology Accessibility Specialist with AccessComputing, examined several of these in depth in his blog post <a href="http://terrillthompson.com/blog/202">Accessible Dropdown Menus</a>. One of the more accessible options discussed in Terrill's article is Yahoo's <a href="http://developer.yahoo.com/yui/3/node-menunav/">YUI MenuNav Node Plugin</a>.</p>
-	<p>The accessible version of the AU home page uses YUI menus.</p>
+<li><p><span class="label">Menu niedostępne dla użytkowników klawiatury</span>. Menu nawigacyjne na tej stronie 
+jest dynamiczne: Podmenu pojawiają się, gdy użytkownicy najadą na menu myszą.
+Jednak te same menu nie pojawiają się dla osób niekorzystających z myszy. Jeśli użytkownik przejdzie do menu 
+naciskając tab, lub używając ekranu dotykowego czy rysika, podmenu się nie pojawiają; 
+ani elementy menu głównego nie przenoszą użytkownika na nową stronę. Po prostu nie działają. 
+Istnieje wiele przykładów systemów menu, które zostały opracowane z myślą o dostępności. Terrill Thompson, specjalista ds. dostępności technologii w AccessComputing, dogłębnie zbadał kilka z nich w swoim wpisie na blogu <a href="http://terrillthompson.com/blog/202">Accessible Dropdown Menus</a>. Jedną z bardziej dostępnych opcji omówionych w artykule Terrilla jest <a href="http://developer.yahoo.com/yui/3/node-menunav/">YUI MenuNav Node Plugin</a> firmy Yahoo.</p>
+	<p>Dostępna wersja strony głównej AU używa menu YUI.</p>
 </li>
 
-<li><p><span class="label">Insufficient visual cues</span>. This page includes visual cues that 
-show mouse users when they're pointing to clickable items on the page such as links. 
-However, this same functionality is not provided for keyboard users, and they would arguably benefit from it even more than mouse users. Without a clear visual indication of one's current location on the page, keyboard users can have a very difficult time getting their bearings as they tab through links and controls.</p>
+<li><p><span class="label">Niewystarczające wskazówki wizualne</span>. Ta strona zawiera wskazówki wizualne, które 
+pokazują użytkownikom myszy, kiedy wskazują na klikalne elementy na stronie, takie jak łącza. 
+Jednak ta sama funkcjonalność nie jest zapewniona dla użytkowników klawiatury, którzy prawdopodobnie skorzystaliby z niej nawet bardziej niż użytkownicy myszy. Bez wyraźnego wizualnego wskazania bieżącej pozycji na stronie, użytkownicy klawiatury mogą mieć bardzo duże trudności z orientacją, gdy przechodzą tabem przez łącza i kontrolki.</p>
 
-	<p>Visual cues for mouse users is typically provided in CSS using the selector <span class="code">a:hover</span>. The same visual cues can be replicated for keyboard users by using the selectors <span class="code">a:focus</span> (for all browsers other than Internet Explorer (IE)) and <span class="code">a:active</span> (for IE). Here's an example in CSS:</p>
+	<p>Wskazówki wizualne dla użytkowników myszy są zazwyczaj zapewniane w CSS przy użyciu selektora <span class="code">a:hover</span>. Te same wskazówki wizualne można odtworzyć dla użytkowników klawiatury, używając selektorów <span class="code">a:focus</span> (dla wszystkich przeglądarek innych niż Internet Explorer (IE)) oraz <span class="code">a:active</span> (dla IE). Oto przykład w CSS:</p>
 
 	<div class="code">a:hover, a:focus, a:active {<br/>
 	&nbsp;color: white;<br/>
@@ -156,80 +156,80 @@ However, this same functionality is not provided for keyboard users, and they wo
 	}</div>
 </li>
 
-<li><span class="label">Language not specified</span>. This page includes content in both  
-English and Spanish. Leading screen readers support both of these languages (and many others), 
-and can switch on the fly between languages if they know to do so. 
-If they don't know to do so, an English-speaking screen reader will read the Spanish 
-section using English pronunciation rules, which produces poor if not indecipherable Spanish. 
-The technique for addressing this issue is to provide a <span class="attribute">lang</span> attribute 
-on the <span class="element">&lt;html&gt;</span> element, with the value being the official language 
-code for the primary language used in the document. For example, an English document would 
-include this html tag: <span class="element">&lt;html lang=&quot;en&quot;&gt;</span>. 
-If the web page includes content that differs from this primary language, 
-the language of that section of content must also be identified in the code. For example, to markup a 
-paragraph as being in Spanish, the paragraph tag would look like this:  
+<li><span class="label">Nieokreślony język</span>. Ta strona zawiera treść zarówno w języku  
+angielskim, jak i hiszpańskim. Wiodące czytniki ekranu obsługują oba te języki (i wiele innych), 
+i mogą przełączać się w locie między językami, jeśli wiedzą, że mają to zrobić. 
+Jeśli nie wiedzą, że mają to zrobić, anglojęzyczny czytnik ekranu przeczyta hiszpańską 
+sekcję, stosując angielskie reguły wymowy, co daje słaby, jeśli nie nieczytelny hiszpański. 
+Techniką rozwiązania tego problemu jest podanie atrybutu <span class="attribute">lang</span> 
+na elemencie <span class="element">&lt;html&gt;</span>, gdzie wartością jest oficjalny kod 
+języka głównego używanego w dokumencie. Na przykład dokument w języku angielskim 
+zawierałby ten znacznik html: <span class="element">&lt;html lang=&quot;en&quot;&gt;</span>. 
+Jeśli strona WWW zawiera treść, która różni się od tego języka głównego, 
+język tej sekcji treści musi być również zidentyfikowany w kodzie. Na przykład, aby oznaczyć 
+akapit jako będący w języku hiszpańskim, znacznik akapitu wyglądałby tak:  
 <span class="element">&lt;p lang=&quot;es&quot;&gt;</span>
 </li>
 
-<li><span class="label">Redundant, uninformative link text</span>. This page includes two links that say &quot;Click here&quot;. Screen reader users may encounter these links out of context. For example, many screen readers include functionality that enables users to quickly generate a list of links and navigate through that list. If links are presented out of context, such as in a list of links, they should be unique, and should be meaningful in-and-of-themselves. 
+<li><span class="label">Powtarzalny, nieinformacyjny tekst łącza</span>. Ta strona zawiera dwa łącza, które mówią &quot;Kliknij tutaj&quot;. Użytkownicy czytnika ekranu mogą napotkać te łącza poza kontekstem. Na przykład wiele czytników ekranu zawiera funkcjonalność, która umożliwia użytkownikom szybkie wygenerowanie listy łączy i nawigowanie po tej liście. Jeśli łącza są przedstawione poza kontekstem, na przykład na liście łączy, powinny być unikalne i powinny być znaczące same w sobie. 
 </li>
 
-<li><span class="label">Color used to communicate information</span>. In the <em>Apply Now!</em> form, required fields are marked with blue text. It is very difficult for most users to distinguish between the blue and black text. Even if the required fields were a more obvious color for the majority of users (e.g., red), many users will still be unable to distinguish between colors (e.g., blind or color-blind users, users with monochrome or color-deficient displays). Consequently they will not have access to this information. Color can be one way of communicated information, but it should also be accompanied with other means of communicating the same idea. For example, the required fields could be bold and marked with an asterisk (*), or if space permits, with &quot;(required)&quot;. Another solution is to identify required fields with aria-required=&quot;true&quot;. The <span class="attribute">aria-required</span> attribute is defined within the W3C's <a href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications</a> (ARIA) 1.0 specification. ARIA is designed to communicate semantic information about interactive, dynamic web content so that assistive technologies such as screen readers can provide a meaningful and effective interface through which users can interact with that content. As of November 2010, ARIA is still a draft specification, but current versions of most leading screen readers already support many of its recommendations, including <span class="attribute">aria-required</span>. On the AU Accessible Version, we have option to include the text &quot;(required)&quot; on the label for each required field, since older versions of screen readers don't support ARIA markup. 
+<li><span class="label">Kolor jako jedyny nośnik informacji</span>. W formularzu <em>Apply Now!</em> pola wymagane są oznaczone niebieskim tekstem. Większości użytkowników bardzo trudno jest odróżnić niebieski tekst od czarnego. Nawet gdyby pola wymagane miały bardziej oczywisty kolor dla większości użytkowników (np. czerwony), wielu użytkowników i tak nie będzie w stanie odróżnić kolorów (np. użytkownicy niewidomi lub daltoniści, użytkownicy z monochromatycznymi lub ubogimi w kolory wyświetlaczami). W konsekwencji nie będą mieli dostępu do tej informacji. Kolor może być jednym ze sposobów przekazywania informacji, ale powinien być również uzupełniony innymi środkami przekazywania tej samej idei. Na przykład pola wymagane mogłyby być pogrubione i oznaczone gwiazdką (*), lub jeśli miejsce na to pozwala, słowem &quot;(wymagane)&quot;. Innym rozwiązaniem jest identyfikacja pól wymaganych za pomocą aria-required=&quot;true&quot;. Atrybut <span class="attribute">aria-required</span> jest zdefiniowany w specyfikacji <a href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications</a> (ARIA) 1.0 organizacji W3C. ARIA jest zaprojektowana do przekazywania informacji semantycznych o interaktywnej, dynamicznej treści WWW, tak aby technologie wspomagające, takie jak czytniki ekranu, mogły zapewnić znaczący i skuteczny interfejs, poprzez który użytkownicy mogą wchodzić w interakcję z tą treścią. Od listopada 2010 ARIA jest wciąż specyfikacją roboczą, ale bieżące wersje większości wiodących czytników ekranu obsługują już wiele z jej zaleceń, w tym <span class="attribute">aria-required</span>. W Wersji dostępnej AU mamy opcję włączenia tekstu &quot;(wymagane)&quot; na etykiecie każdego pola wymaganego, ponieważ starsze wersje czytników ekranu nie obsługują kodu ARIA. 
 </li> 
 
-<li><p><span class="label">Missing accessible form markup</span>. In the <em>Apply Now!</em> form, sighted users know which labels accompany the various form fields by their position. In the first six fields the label appears immediately above the form field, and in the set of possible majors the label appears immediately after each checkbox. Although these relationships may seem apparent to sighted users, they're not so obvious to screen reader users. HTML includes markup that enables form fields and their labels to be explicitly associated with one another. If this markup is not present, screen readers have to guess which labels are associated with each field, and they don't always guess correctly. For example, some screen readers incorrectly assume the label for each checkbox is the text that immediately proceeds it, rather than the text that follows it. Therefore, a screen reader user could check the Psychology checkbox, having been erroneously informed by their screen reader that they're checking the Physics checkbox. To explicitly associate labels with form fields, each label must be marked up with the HTML <span class="element">&lt;label&gt;</span> element. The <span class="element">&lt;label&gt;</span> element has a <span class="attribute">for</span> attribute whose value matches the <span class="attribute">id</span> attribute of the associated form field.</p>
-	<p>Also, when a form uses checkboxes, there are typically two pieces of critical information related to each checkbox: The label associated with that checkbox (e.g., Psychology) and the overall question or prompt (e.g., Desired major(s)). In order to explicitly communicate the relationships between all of this information, the entire set of checkboxes and labels, plus the overall question or prompt, should be wrapped in a <span class="element">&lt;fieldset&gt;</span> element, and the question/prompt should be marked up as a <span class="element">&lt;legend&gt;</span>. The individual checkbox labels should be marked up using the <span class="element">&lt;label&gt;</span> element as described above. With this accessible markup in place, screen readers can announce the overall question or prompt as the user enters the fieldset, or as he or she selects one of the checkboxes. This same markup applies to radio buttons.</p>
+<li><p><span class="label">Brak dostępnego kodu formularza</span>. W formularzu <em>Apply Now!</em> użytkownicy widzący wiedzą, które etykiety towarzyszą poszczególnym polom formularza, dzięki ich położeniu. W pierwszych sześciu polach etykieta pojawia się bezpośrednio nad polem formularza, a w zestawie możliwych kierunków studiów etykieta pojawia się bezpośrednio po każdym polu wyboru. Chociaż te relacje mogą wydawać się oczywiste dla użytkowników widzących, nie są tak oczywiste dla użytkowników czytnika ekranu. HTML zawiera kod, który umożliwia jawne powiązanie pól formularza z ich etykietami. Jeśli tego kodu nie ma, czytniki ekranu muszą zgadywać, które etykiety są powiązane z każdym polem, i nie zawsze zgadują poprawnie. Na przykład niektóre czytniki ekranu błędnie zakładają, że etykietą dla każdego pola wyboru jest tekst, który bezpośrednio je poprzedza, a nie tekst, który po nim następuje. W związku z tym użytkownik czytnika ekranu mógłby zaznaczyć pole wyboru Psychologia, będąc błędnie poinformowanym przez swój czytnik ekranu, że zaznacza pole wyboru Fizyka. Aby jawnie powiązać etykiety z polami formularza, każda etykieta musi być oznaczona za pomocą elementu HTML <span class="element">&lt;label&gt;</span>. Element <span class="element">&lt;label&gt;</span> ma atrybut <span class="attribute">for</span>, którego wartość odpowiada atrybutowi <span class="attribute">id</span> powiązanego pola formularza.</p>
+	<p>Ponadto, gdy formularz używa pól wyboru, zazwyczaj istnieją dwie kluczowe informacje związane z każdym polem wyboru: Etykieta powiązana z tym polem wyboru (np. Psychologia) oraz ogólne pytanie lub polecenie (np. Pożądane kierunki studiów). Aby jawnie przekazać relacje między wszystkimi tymi informacjami, cały zestaw pól wyboru i etykiet, wraz z ogólnym pytaniem lub poleceniem, powinien być opakowany w element <span class="element">&lt;fieldset&gt;</span>, a pytanie/polecenie powinno być oznaczone jako <span class="element">&lt;legend&gt;</span>. Poszczególne etykiety pól wyboru powinny być oznaczone za pomocą elementu <span class="element">&lt;label&gt;</span> jak opisano powyżej. Gdy ten dostępny kod jest na miejscu, czytniki ekranu mogą ogłosić ogólne pytanie lub polecenie, gdy użytkownik wchodzi do zbioru pól (fieldset), lub gdy wybiera jedno z pól wyboru. Ten sam kod dotyczy przycisków opcji.</p>
 </li>
 
-<li><p><span class="label">Inaccessible CAPTCHA</span>. Online forms often include images of distorted characters called CAPTCHAs ("Completely Automated Public Turing test to tell Computers and Humans Apart"). CAPTCHAs are designed to prevent spammers and other unwanted users from filling out and submitting the form automatically. The usual method for making images accessible (alternate text) would not be feasible for CAPTCHAs since this same technique would make the images accessible to robots. The W3C published a Working Group Note in 2005 that explores the <a href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</a> and proposed possible solutions. Several solutions have been proposed and implemented with some success:</p>
+<li><p><span class="label">Niedostępna CAPTCHA</span>. Formularze online często zawierają obrazy zniekształconych znaków zwane CAPTCHA ("Completely Automated Public Turing test to tell Computers and Humans Apart"). CAPTCHA są zaprojektowane, aby uniemożliwić spamerom i innym niepożądanym użytkownikom automatyczne wypełnianie i wysyłanie formularza. Zwykła metoda udostępniania obrazów (tekst alternatywny) nie byłaby wykonalna dla CAPTCHA, ponieważ ta sama technika udostępniłaby obrazy robotom. W 2005 roku W3C opublikowało notę grupy roboczej, która bada <a href="http://www.w3.org/TR/turingtest/">Niedostępność CAPTCHA</a> i zaproponowała możliwe rozwiązania. Zaproponowano i wdrożono kilka rozwiązań z pewnym powodzeniem:</p>
 	<ul>
-		<li>Many sites have implemented a CAPTCHA that includes an optional audio version for users who are unable to process the visual version. An example is <a href="http://www.google.com/recaptcha">reCAPTCHA</a>. However, often the audio version is disproportionately more difficult to solve than the visual version. Also, this solution fails to make CAPTCHA accessible to deaf/blind users.</li>
-		<li>Some sites have implemented text CAPTCHAs that ask simple logic questions. An example of this approach is <a href="http://textcaptcha.com/">textCAPTCHA</a>. This is a fully accessible solution, but as spammers' tools get smarter there may be limits to its effectiveness.</li>
-		<li>WebAIM published an article with several proposed methods for attaining <a href="http://webaim.org/blog/spam_free_accessible_forms/">Spam-free accessible forms</a> without CAPTCHA. Many others have worked, and continue to work, on improving our technological ability to detect unwanted form submissions behind the scenes without burdening users.</li>
+		<li>Wiele witryn wdrożyło CAPTCHA zawierającą opcjonalną wersję dźwiękową dla użytkowników, którzy nie mogą przetworzyć wersji wizualnej. Przykładem jest <a href="http://www.google.com/recaptcha">reCAPTCHA</a>. Jednak często wersja dźwiękowa jest nieproporcjonalnie trudniejsza do rozwiązania niż wersja wizualna. Ponadto to rozwiązanie nie udostępnia CAPTCHA użytkownikom głuchoniewidomym.</li>
+		<li>Niektóre witryny wdrożyły tekstowe CAPTCHA, które zadają proste pytania logiczne. Przykładem tego podejścia jest <a href="http://textcaptcha.com/">textCAPTCHA</a>. Jest to w pełni dostępne rozwiązanie, ale w miarę jak narzędzia spamerów stają się inteligentniejsze, jego skuteczność może mieć swoje granice.</li>
+		<li>WebAIM opublikowało artykuł z kilkoma proponowanymi metodami osiągnięcia <a href="http://webaim.org/blog/spam_free_accessible_forms/">dostępnych formularzy wolnych od spamu</a> bez CAPTCHA. Wielu innych pracowało i wciąż pracuje nad ulepszaniem naszej technologicznej zdolności do wykrywania niepożądanych zgłoszeń formularzy za kulisami, bez obciążania użytkowników.</li>
 	</ul>    
 
-	<p>For demonstration purposes, the updated AU home page provides a text CAPTCHA. This is for demonstration purposes only, and there is no actual server-side validation that alerts users if they submit the form with an incorrect security answer.</p> 	
+	<p>Do celów demonstracyjnych zaktualizowana strona główna AU udostępnia tekstową CAPTCHA. Służy to wyłącznie celom demonstracyjnym i nie ma żadnej rzeczywistej walidacji po stronie serwera, która alarmowałaby użytkowników, jeśli wyślą formularz z nieprawidłową odpowiedzią zabezpieczającą.</p> 	
 </li>
 
-<li><p><span class="label">Poor design of Javascript-based form validation</span>. When the user submits the form, it's validated using Javascript before the data is submitted to the survey. If the user's submission fails validation (due to required fields missing or an invalid email address), a message is displayed in a modal div, positioned in the center of the screen, with text: &quot;Your form has errors. Please correct, then resubmit.&quot; Users must click off of the error message in order to restore the window to its original state so they can proceed to fix the form errors.</p>
-	<p>This feature has many problems:</p>
+<li><p><span class="label">Zła konstrukcja walidacji formularza w JavaScript</span>. Gdy użytkownik wysyła formularz, jest on walidowany za pomocą JavaScript przed wysłaniem danych do ankiety. Jeśli zgłoszenie użytkownika nie przejdzie walidacji (z powodu brakujących pól wymaganych lub nieprawidłowego adresu email), komunikat jest wyświetlany w modalnym div, umieszczonym na środku ekranu, z tekstem: &quot;Your form has errors. Please correct, then resubmit.&quot; Użytkownicy muszą kliknąć poza komunikatem o błędzie, aby przywrócić okno do jego pierwotnego stanu, tak aby mogli przejść do poprawiania błędów formularza.</p>
+	<p>Ta funkcja ma wiele problemów:</p>
 	<ul>
-		<li>Although the error message is clearly visible to sighted users, screen readers do not alert users to the fact that this message has appeared. Screen reader users may find the message eventually, but their focus is not automatically taken there. They will most likely become confused since clicking submit seems to have no effect, but they have no idea why.</li>
-		<li>The error message is unclear. It states that there are errors, but does not identify what those errors were. The burden of finding the errors is left to the user, which adversely impacts usability for everyone, but can be especially challenging for screen reader users.</li>
-		<li>As implemented in this case, hiding the error message is dependent on the user being able to click the screen with a mouse. If the user doesn't have or can't use a mouse, they are unable to hide the error message. Internet Explorer users experience the same problem: clicking with a mouse hides the error in all other browsers, but not in IE.</li>
+		<li>Chociaż komunikat o błędzie jest wyraźnie widoczny dla użytkowników widzących, czytniki ekranu nie alarmują użytkowników o tym, że ten komunikat się pojawił. Użytkownicy czytnika ekranu mogą ostatecznie znaleźć komunikat, ale ich fokus nie jest tam automatycznie przenoszony. Najprawdopodobniej będą zdezorientowani, ponieważ kliknięcie wyślij wydaje się nie mieć żadnego efektu, a oni nie mają pojęcia dlaczego.</li>
+		<li>Komunikat o błędzie jest niejasny. Stwierdza, że są błędy, ale nie identyfikuje, jakie to były błędy. Ciężar znalezienia błędów spoczywa na użytkowniku, co niekorzystnie wpływa na użyteczność dla wszystkich, ale może być szczególnie trudne dla użytkowników czytnika ekranu.</li>
+		<li>W sposób, w jaki to wdrożono w tym przypadku, ukrycie komunikatu o błędzie zależy od tego, czy użytkownik jest w stanie kliknąć ekran myszą. Jeśli użytkownik nie ma lub nie może używać myszy, nie jest w stanie ukryć komunikatu o błędzie. Użytkownicy Internet Explorer doświadczają tego samego problemu: kliknięcie myszą ukrywa błąd we wszystkich innych przeglądarkach, ale nie w IE.</li>
 	</ul>
-	<p>Javascript-based form validation can be a useful feature, but it should be designed in a way that considers the needs of all users, including those who can't see the error message visually, and those who are unable to use a mouse. A better design would be one in which:</p>
+	<p>Walidacja formularza oparta na JavaScript może być użyteczną funkcją, ale powinna być zaprojektowana w sposób, który uwzględnia potrzeby wszystkich użytkowników, w tym tych, którzy nie widzą wizualnie komunikatu o błędzie, oraz tych, którzy nie są w stanie używać myszy. Lepszy projekt to taki, w którym:</p>
 	<ul>
-		<li>the error message includes enough detail so that all users know which fields have errors.</li>
-		<li>the error message is explicitly marked up with role=&quot;alert&quot; The <span class="attribute">role</span> attribute is defined within ARIA 1.0, which is described in item #10 above. If the error message is explicitly identified as having role=&quot;alert&quot;, screen readers will announce this message to users as soon as it appears, regardless of their current location on the page.</li>
-		<li>the user's focus can be sent automatically to the first field on which a correction is needed</li>
+		<li>komunikat o błędzie zawiera wystarczająco dużo szczegółów, aby wszyscy użytkownicy wiedzieli, które pola mają błędy.</li>
+		<li>komunikat o błędzie jest jawnie oznaczony za pomocą role=&quot;alert&quot; Atrybut <span class="attribute">role</span> jest zdefiniowany w ARIA 1.0, która jest opisana w punkcie #10 powyżej. Jeśli komunikat o błędzie jest jawnie zidentyfikowany jako mający role=&quot;alert&quot;, czytniki ekranu ogłoszą ten komunikat użytkownikom, gdy tylko się pojawi, niezależnie od ich bieżącej pozycji na stronie.</li>
+		<li>fokus użytkownika może być wysłany automatycznie do pierwszego pola, w którym potrzebna jest korekta</li>
 	</ul>
 </li>
 
-<li><span class="label">Missing ARIA landmarks</span>. ARIA (defined in items #10 and 12) includes eight so-called <a href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">landmark roles</a>, which are specific regions of the page identified according to their function. They are: application, banner, complementary (e.g., a sidebar), contentinfo (e.g., a footer), form, main, navigation, and search. Most screen readers now support ARIA landmarks. Users can jump between landmarks on a page with a single keystroke, or can generate a list of landmarks and navigate the page using that list. This is similar in purpose to using good heading structure (see item #1), but differs in the information it communicates about the organization of the page. The accessible version of the AU Home Page uses ARIA landmarks to mark the banner, main, navigation, form, and contentinfo sections of the page. The navigation menu additionally uses <span class="attribute">aria-label</span> to clearly communicate the function of the navigation menu (in this case, <span class="code">aria-label=&quot;Main menu&quot;</span>). This supplemental label is announced by screen readers and is especially helpful for distinguishing between navigation regions if there are more than one of these regions on a page.</li>  
-<li><p><span class="label">Missing accessible table markup</span>. Data tables can be challenging for screen reader users to understand, particularly if they have many columns, or a complex layout with nested rows or columns, as is the case with the AU Enrollment Trends table.  Imagine reading a table from left to right and top to bottom, with no visual access to the column headers. When you're halfway through the table, will you remember which column you're in? This is not unlike what screen reader users experience as they try to read a data table unless the table includes semantic markup that explicitly defines the relationships between the table's parts. For example, table headers should be marked up with the <span class="element">&lt;th&gt;</span> element. Also, headers should include the <span class="attribute">scope</span> attribute, which identifies whether the cell is a row header (<span class="code">&lt;th scope=&quot;row&quot;</span>) or a column header (<span class="code">&lt;th scope=&quot;col&quot;</span>).</p>
+<li><span class="label">Brak punktów orientacyjnych ARIA (landmarks)</span>. ARIA (zdefiniowana w punktach #10 i 12) zawiera osiem tak zwanych <a href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">ról punktów orientacyjnych (landmarks)</a>, które są konkretnymi obszarami strony zidentyfikowanymi zgodnie z ich funkcją. Są to: application, banner, complementary (np. panel boczny), contentinfo (np. stopka), form, main, navigation oraz search. Większość czytników ekranu obsługuje teraz punkty orientacyjne ARIA. Użytkownicy mogą przeskakiwać między punktami orientacyjnymi na stronie za pomocą pojedynczego naciśnięcia klawisza, lub mogą wygenerować listę punktów orientacyjnych i nawigować po stronie za pomocą tej listy. Ma to podobny cel jak stosowanie dobrej struktury nagłówków (zobacz punkt #1), ale różni się informacją, którą przekazuje o organizacji strony. Dostępna wersja strony głównej AU używa punktów orientacyjnych ARIA do oznaczenia sekcji banner, main, navigation, form oraz contentinfo strony. Menu nawigacyjne dodatkowo używa <span class="attribute">aria-label</span> do jasnego przekazania funkcji menu nawigacyjnego (w tym przypadku <span class="code">aria-label=&quot;Main menu&quot;</span>). Ta uzupełniająca etykieta jest ogłaszana przez czytniki ekranu i jest szczególnie pomocna w rozróżnianiu obszarów nawigacji, jeśli na stronie jest więcej niż jeden taki obszar.</li>  
+<li><p><span class="label">Brak dostępnego kodu tabeli</span>. Tabele danych mogą być trudne do zrozumienia dla użytkowników czytnika ekranu, szczególnie jeśli mają wiele kolumn lub złożony układ z zagnieżdżonymi wierszami lub kolumnami, jak ma to miejsce w tabeli Trendy zapisów AU.  Wyobraź sobie czytanie tabeli od lewej do prawej i od góry do dołu, bez wizualnego dostępu do nagłówków kolumn. Gdy będziesz w połowie tabeli, czy zapamiętasz, w której kolumnie jesteś? Nie różni się to zbytnio od tego, czego doświadczają użytkownicy czytnika ekranu, gdy próbują przeczytać tabelę danych, chyba że tabela zawiera kod semantyczny, który jawnie definiuje relacje między częściami tabeli. Na przykład nagłówki tabeli powinny być oznaczone za pomocą elementu <span class="element">&lt;th&gt;</span>. Ponadto nagłówki powinny zawierać atrybut <span class="attribute">scope</span>, który identyfikuje, czy komórka jest nagłówkiem wiersza (<span class="code">&lt;th scope=&quot;row&quot;</span>) czy nagłówkiem kolumny (<span class="code">&lt;th scope=&quot;col&quot;</span>).</p>
 
-	<p>If the table includes nested rows or columns, the relationships between headers and cells become even more difficult to decipher. In these sorts of tables, there are typically two, three, or more headers that apply to every cell in the table. To explicitly express these relationships using HTML markup, each header needs a unique id (e.g., <span class="code">&lt;th scope=&quot;col&quot; id=&quot;col1&quot;&gt;</span>), and each data cell needs a <span class="attribute">headers</span> attribute which lists the id's of all headers that apply to that cell,  separated by a space (e.g., <span class="code">&lt;td headers=&quot;col1a col2a row1&quot;&gt;</span>). When a table includes all of this markup, screen reader users can easily ascertain their current position with a table, and their screen reader can announce all of the headers that apply to the current cell.</p>
+	<p>Jeśli tabela zawiera zagnieżdżone wiersze lub kolumny, relacje między nagłówkami a komórkami stają się jeszcze trudniejsze do rozszyfrowania. W tego rodzaju tabelach zazwyczaj istnieją dwa, trzy lub więcej nagłówków, które odnoszą się do każdej komórki w tabeli. Aby jawnie wyrazić te relacje za pomocą kodu HTML, każdy nagłówek potrzebuje unikalnego id (np. <span class="code">&lt;th scope=&quot;col&quot; id=&quot;col1&quot;&gt;</span>), a każda komórka danych potrzebuje atrybutu <span class="attribute">headers</span>, który wymienia id wszystkich nagłówków odnoszących się do tej komórki, oddzielone spacją (np. <span class="code">&lt;td headers=&quot;col1a col2a row1&quot;&gt;</span>). Gdy tabela zawiera cały ten kod, użytkownicy czytnika ekranu mogą łatwo ustalić swoją bieżącą pozycję w tabeli, a ich czytnik ekranu może ogłosić wszystkie nagłówki odnoszące się do bieżącej komórki.</p>
 
-	<p>Also, the <span class="element">&lt;table&gt;</span> element can include a <span class="attribute">summary</span> attribute, the purpose of which is to provide an overview of how the table is organized, specifically for screen reader users.</p>
+	<p>Ponadto element <span class="element">&lt;table&gt;</span> może zawierać atrybut <span class="attribute">summary</span>, którego celem jest zapewnienie przeglądu tego, jak tabela jest zorganizowana, w szczególności dla użytkowników czytnika ekranu.</p>
 </li>
 
-<li><p><span class="label">Missing abbreviation tags</span>. Abbreviations can be difficult for all users to understand. The AU Enrollment Trends table includes a common example of how abbreviations are used in higher education. These abbreviations may be new to some users, and for all users there may be possible conflicts. For example, the abbreviation &quot;Eco&quot; could refer either to Ecological Sciences or Economics. The <span class="element">&lt;abbr&gt;</span> element (and its sister element, <span class="element">&lt;acronym&gt;</span>) should be used to identify abbreviations (or acronyms). With either of these elements, the <span class="attribute">title</span> attribute is used to spell out the full word or name. This is displayed as a tooltip to mouse users as they hover over the abbreviation, and is announced verbally to screen reader users if their screen reader is configured to support this functionality. In the Eco example, the <span class="element">&lt;abbr&gt;</span> element would be used like this:</p>
+<li><p><span class="label">Brak znaczników skrótów</span>. Skróty mogą być trudne do zrozumienia dla wszystkich użytkowników. Tabela Trendy zapisów AU zawiera częsty przykład tego, jak skróty są używane w szkolnictwie wyższym. Skróty te mogą być nowe dla niektórych użytkowników, a dla wszystkich użytkowników mogą wystąpić możliwe konflikty. Na przykład skrót &quot;Eco&quot; może odnosić się albo do Ecological Sciences, albo do Economics. Element <span class="element">&lt;abbr&gt;</span> (i jego siostrzany element <span class="element">&lt;acronym&gt;</span>) powinien być używany do identyfikacji skrótów (lub akronimów). Przy każdym z tych elementów atrybut <span class="attribute">title</span> jest używany do rozwinięcia pełnego słowa lub nazwy. Jest to wyświetlane jako dymek dla użytkowników myszy, gdy najadą na skrót, i jest ogłaszane werbalnie użytkownikom czytnika ekranu, jeśli ich czytnik ekranu jest skonfigurowany do obsługi tej funkcjonalności. W przykładzie Eco element <span class="element">&lt;abbr&gt;</span> byłby użyty w ten sposób:</p>
 	<div class="code">&lt;abbr title=&quot;Economics&quot;&gt;Eco&lt;/abbr&gt;</div>
 </li>
 
-<li><p><span class="label">HTML fails validation</span>. The rules of markup languages like HTML were meant to be followed. If a web page uses non-standard tags or uses standard tags inappropriately, this increases the likelihood that some browsers or assistive technologies will render the page incorrectly. Therefore web pages should be checked with tools like the <a href="http://validator.w3.org/">W3C Markup Validation Service</a>. A check of the AU home page results in 12 errors, and detail is provided about each error. A scan of those details reveals that the 12 individual errors are actually only two errors repeated multiple times. The two errors are:</p>
+<li><p><span class="label">HTML nie przechodzi walidacji</span>. Reguły języków znaczników, takich jak HTML, miały być przestrzegane. Jeśli strona WWW używa niestandardowych znaczników lub używa standardowych znaczników w niewłaściwy sposób, zwiększa to prawdopodobieństwo, że niektóre przeglądarki lub technologie wspomagające wyrenderują stronę niepoprawnie. Dlatego strony WWW powinny być sprawdzane za pomocą narzędzi takich jak <a href="http://validator.w3.org/">W3C Markup Validation Service</a>. Sprawdzenie strony głównej AU daje 12 błędów, a dla każdego błędu podane są szczegóły. Przegląd tych szczegółów ujawnia, że 12 pojedynczych błędów to w rzeczywistości tylko dwa błędy powtórzone wielokrotnie. Te dwa błędy to:</p>
 	<ul>
-		<li>Images are missing <span class="attribute">alt</span> attributes (this problem is described in Items 2 and 3 above)</li>
-		<li>This page uses the <span class="element">&lt;font&gt;</span> element, which was ok in early versions of HTML, but is now obsolete.</li>
+		<li>Obrazom brakuje atrybutów <span class="attribute">alt</span> (ten problem jest opisany w punktach 2 i 3 powyżej)</li>
+		<li>Ta strona używa elementu <span class="element">&lt;font&gt;</span>, który był w porządku we wczesnych wersjach HTML, ale jest teraz przestarzały.</li>
 	</ul>
-	<p>On the updated AU home page, the above validation errors have all been corrected. Also, the new AU home page is built using an HTML5 doctype. This allows the page to validate when using ARIA markup such as the <span class="attribute">role</span> and <span class="attribute">aria-label</span> attributes described above. Since ARIA post-dates earlier versions of HTML, it is not valid markup according to HTML validators. However, ARIA is supported by assistive technologies regardless of doctype, so we highly recommended using it even if doing so causes pages to fail validation. While it's important to use valid code in general, it's also important to know when it's ok to break the rules.</p> 
-	<p>In fact, the improved AU home page has one validation error: The <span class="attribute">summary</span> attribute on tables (described in item #15) is no longer valid in HTML5. This was removed from the HTML specification with considerable controversy, and is still supported by assistive technologies even in HTML5. Therefore, this is yet another case where breaking the rules is advisable since doing so results in improved accessibility.</p>
+	<p>Na zaktualizowanej stronie głównej AU wszystkie powyższe błędy walidacji zostały poprawione. Ponadto nowa strona główna AU jest zbudowana przy użyciu doctype HTML5. Pozwala to stronie przejść walidację przy używaniu kodu ARIA, takiego jak atrybuty <span class="attribute">role</span> i <span class="attribute">aria-label</span> opisane powyżej. Ponieważ ARIA jest późniejsza niż wcześniejsze wersje HTML, nie jest poprawnym kodem według walidatorów HTML. Jednak ARIA jest obsługiwana przez technologie wspomagające niezależnie od doctype, więc gorąco zalecamy jej używanie, nawet jeśli powoduje to, że strony nie przechodzą walidacji. Choć ogólnie ważne jest używanie poprawnego kodu, ważne jest również, aby wiedzieć, kiedy można złamać reguły.</p> 
+	<p>W rzeczywistości ulepszona strona główna AU ma jeden błąd walidacji: Atrybut <span class="attribute">summary</span> w tabelach (opisany w punkcie #15) nie jest już poprawny w HTML5. Został usunięty ze specyfikacji HTML przy znacznych kontrowersjach i jest wciąż obsługiwany przez technologie wspomagające nawet w HTML5. Dlatego jest to kolejny przypadek, w którym łamanie reguł jest wskazane, ponieważ skutkuje poprawioną dostępnością.</p>
 </li>
 </ol>
 
 <div id="footer">
-Copyright &copy;2002 - <?php echo date('Y');?> University of Washington. Permission is granted to copy these materials for educational, noncommercial purposes provided the source is acknowledged. This product was originally developed with support from the National Institute on Disability and Rehabilitation Research of the U.S. Department of Education (grant #H133D010306), and was updated in 2010 with support from the National Science Foundation (grant #CNS-054061S). The contents do not necessarily represent the policies of the U.S. federal government, and you should not assume their endorsement. 
+Copyright &copy;2002 - <?php echo date('Y');?> University of Washington. Zezwala się na kopiowanie tych materiałów w celach edukacyjnych, niekomercyjnych, pod warunkiem podania źródła. Ten produkt został pierwotnie opracowany przy wsparciu National Institute on Disability and Rehabilitation Research amerykańskiego Department of Education (grant #H133D010306), a w 2010 roku został zaktualizowany przy wsparciu National Science Foundation (grant #CNS-054061S). Treść nie musi odzwierciedlać polityki rządu federalnego Stanów Zjednoczonych i nie należy zakładać, że stanowi ona jego poparcie. 
 </div> 
 
 </body>

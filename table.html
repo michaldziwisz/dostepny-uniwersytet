@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="pl">
 <head>
 	<meta charset="utf-8">
-	<title>Table Exercise</title>
+	<title>Ćwiczenie z tabelą</title>
 	<style>
 		body {
 			margin: 0 1em;
@@ -54,33 +54,33 @@
 			var span = document.getElementById('adj');
 			if (table.getAttribute('class') == 'unreadable') {
 				table.setAttribute('class','readable');
-				document.getElementById('adj').innerHTML = 'more difficult to read';
+				document.getElementById('adj').innerHTML = 'trudniejsza do odczytania';
 			}
 			else {
 				table.setAttribute('class','unreadable');
-				document.getElementById('adj').innerHTML = 'easier to read';
+				document.getElementById('adj').innerHTML = 'łatwiejsza do odczytania';
 			}
 		}
 	</script>
 </head>
 <body>
 
-<h1>Table Exercise</h1>
+<h1>Ćwiczenie z tabelą</h1>
 
-<p class="question"><strong>Question 1.</strong> Based on the following IRS Tax Table, if you are single and earned $35 income in the last year, how much tax do you owe? </p>
+<p class="question"><strong>Pytanie 1.</strong> Na podstawie poniższej tabeli podatkowej: jeśli jesteś osobą samotną i w ubiegłym roku osiągnąłeś dochód 35, ile wynosi należny podatek? </p>
 
 <table class="unreadable">
   <tr>
-   <th colspan="2">If your taxable income is</th>
-   <th colspan="4">And you are</th>
+   <th colspan="2">Jeśli Twój dochód podlegający opodatkowaniu wynosi</th>
+   <th colspan="4">A jesteś</th>
   </tr>
   <tr>
-    <th>At least</th>
-    <th>But less than</th>
-    <th>Single</th>
-    <th>Married filing jointly</th>
-    <th>Married filing separately</th>
-    <th>Head of household</th>
+    <th>Co najmniej</th>
+    <th>Ale mniej niż</th>
+    <th>Osobą samotną</th>
+    <th>Małżeństwem rozliczającym się wspólnie</th>
+    <th>Małżeństwem rozliczającym się osobno</th>
+    <th>Głową gospodarstwa domowego</th>
   </tr>
   <tr>
     <td>0</td>
@@ -133,7 +133,7 @@
  </table>
 </div>
 
-<p><a href="#" onclick="swapTableStyle()">Make table <span id="adj">easier to read</span></a>.</p>
+<p><a href="#" onclick="swapTableStyle()">Uczyń tabelę <span id="adj">łatwiejszą do odczytania</span></a>.</p>
 
 </body>
 </html>

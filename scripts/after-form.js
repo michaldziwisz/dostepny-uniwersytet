@@ -17,7 +17,7 @@ $(document).ready(function() {
   var captchaFieldset = $('<fieldset>'); 
   var captchaLegend = $('<legend>').attr({
     class: 'required'
-  }).text('Security Question ');
+  }).text('Pytanie zabezpieczające ');
   var captchaStar = $('<span>').attr({
     'class': 'star',
     'aria-hidden': 'true'
@@ -55,9 +55,9 @@ $(document).ready(function() {
       success = false; 
     }
     if (success) { 
-      $('title').text('Success! Accessible University');
-      feedbackHeading = $('<h3>').text('Thank you!');
-      feedbackMsg = 'Your application has been received.'
+      $('title').text('Sukces! Dostępny Uniwersytet');
+      feedbackHeading = $('<h3>').text('Dziękujemy!');
+      feedbackMsg = 'Twoje zgłoszenie zostało przyjęte.'
       feedbackText = $('<p>').text(feedbackMsg);
       $('#feedback').empty().append(feedbackHeading,feedbackText).show();
       // Reset the form 
@@ -66,9 +66,9 @@ $(document).ready(function() {
       $('form input[type="checkbox"]').prop('checked',false);
     }
     else { 
-      $('title').text('Error with fom submission | Accessible University');
-      feedbackHeading = $('<h3>').text('Error');
-      feedbackMsg = 'Your answer to the security question was not correct. Please try again.';  
+      $('title').text('Błąd przy wysyłaniu formularza | Dostępny Uniwersytet');
+      feedbackHeading = $('<h3>').text('Błąd');
+      feedbackMsg = 'Twoja odpowiedź na pytanie zabezpieczające była niepoprawna. Spróbuj ponownie.';  
       feedbackText = $('<p>').text(feedbackMsg);
       $('#feedback').empty().append(feedbackHeading,feedbackText).show();
       // Empty the captcha field, but not the other fields
@@ -82,15 +82,15 @@ function getCaptchas() {
 
   let captchas = [
     { 
-      'question': 'If a cow is purple, what color is it?',
-      'answer': 'purple'
+      'question': 'Jeśli krowa jest fioletowa, jakiego jest koloru?',
+      'answer': 'fioletowa'
     },
     { 
-      'question': 'Sunday, cow, Friday. Which of these is not a day?',
-      'answer': 'cow'
+      'question': 'Niedziela, krowa, piątek. Które z nich nie jest dniem?',
+      'answer': 'krowa'
     },
     { 
-      'question': 'Cow, pizza, car. Which of these has more than three letters?',
+      'question': 'Kot, pizza, dom. Które z tych słów ma więcej niż trzy litery?',
       'answer': 'pizza'
     }
   ]
@@ -122,7 +122,7 @@ function checkRequiredFields() {
         skippedId = $(this).attr('id'); 
         skippedLabel = $('label[for=' + skippedId + ']').text().replace(' *',''); 
         result = { 
-          'error' : 'ERROR: ' + skippedLabel + ' is required.',
+          'error' : 'BŁĄD: pole „' + skippedLabel + '” jest wymagane.',
           'fieldId' : skippedId
         }; 
         return false; // to break out of the each()  

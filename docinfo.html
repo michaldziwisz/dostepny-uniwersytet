@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 	<meta charset="utf-8">
-	<title>Document Accessibility Samples | Accessible University 3.0</title>
+	<title>Przykłady dostępności dokumentów | Dostępny Uniwersytet 3.0</title>
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -110,263 +110,263 @@
 		<a href="http://www.washington.edu/accesscomputing">
 			<img src="http://www.washington.edu/doit/Kb/Images/ACLogo220x110.gif" alt="AccessComputing">
 		</a>
-		<nav id="AU-menu" aria-label="Demo site menu">
+		<nav id="AU-menu" aria-label="Menu witryny demonstracyjnej">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Strona główna</a></li>
 			</ul>
 		</nav>
 	</header>
 	
 	<main>
 
-<h1>Accessible University Document Accessibility Samples</h1>
+<h1>Przykłady dostępności dokumentów Dostępnego Uniwersytetu</h1>
 
-<p>This page summarizes the accessibility issues demonstrated in the Word, PDF, and PowerPoint sample files that accompany the <a href="index.html">Accessible University</a> demo site. With each issue, a solution is suggested as demonstrated in the accessible files.</p>
+<p>Ta strona podsumowuje problemy z dostępnością zademonstrowane w przykładowych plikach Word, PDF i PowerPoint, które towarzyszą witrynie demonstracyjnej <a href="index.html">Accessible University</a>. Dla każdego problemu zaproponowano rozwiązanie zademonstrowane w plikach dostępnych.</p>
 
 <h2>HTML</h2>
 
-<div class="exampleLink">Example document: <a href="documents/syllabus.html">HTML version - Accessible</a></div>
+<div class="exampleLink">Przykładowy dokument: <a href="documents/syllabus.html">Wersja HTML — Dostępna</a></div>
 
-<p>This document can be demonstrated using any web browser. Use the browser's <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools">developer tools</a> to explore the source code as needed to show the underlying code. HTML is far more accessible than Word or PDF, and sets the bar for the level of accessibility we're striving for, to the extent possible, in other document formats. Noteworthy features of the sample HTML document include:</p>
+<p>Ten dokument można zademonstrować w dowolnej przeglądarce internetowej. Użyj <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools">narzędzi programistycznych</a> przeglądarki, aby w razie potrzeby przeanalizować kod źródłowy i pokazać kod bazowy. HTML jest znacznie bardziej dostępny niż Word czy PDF i wyznacza poprzeczkę dla poziomu dostępności, do którego dążymy — w miarę możliwości — w innych formatach dokumentów. Godne uwagi cechy przykładowego dokumentu HTML obejmują:</p>
 <ol id="html-list">
-	<li><h3>CSS styles are included.</h3>
-		<p>All styles are defined using Cascading Style Sheet (CSS). Font family is sans-serif and background and foreground colors pass contrast ratios as defined by WCAG.</p>
+	<li><h3>Uwzględniono style CSS.</h3>
+		<p>Wszystkie style są zdefiniowane za pomocą kaskadowych arkuszy stylów (CSS). Rodzina czcionek jest bezszeryfowa, a kolory tła i pierwszego planu spełniają współczynniki kontrastu zdefiniowane przez WCAG.</p>
 	</li>
-	<li><h3>Image includes alt text.</h3>
-		<p>An image is included in this file and alt text is assigned.</p>
+	<li><h3>Obraz zawiera tekst alternatywny.</h3>
+		<p>W tym pliku znajduje się obraz, do którego przypisano tekst alternatywny.</p>
 	</li>
-	<li><h3>Headings are present with proper levels.</h3>
-		<p>Headings are included in this file, and they form an outline of the content by using the appropriate levels. </p>
+	<li><h3>Nagłówki są obecne i mają właściwe poziomy.</h3>
+		<p>W tym pliku uwzględniono nagłówki, które tworzą strukturę treści dzięki zastosowaniu odpowiednich poziomów. </p>
 	</li>
-	<li><h3>Lists are coded properly.</h3>
-		<p>A list is included and uses the proper coding for an unordered list.</p>
+	<li><h3>Listy są poprawnie zakodowane.</h3>
+		<p>Uwzględniono listę, która używa właściwego kodowania dla listy nieuporządkowanej.</p>
 	</li>
-	<li><h3>Tables included proper markup for headers.</h3>
-		<p>Two tables are included in this file; the first table is simple in its construction with a single table header for the top row. The second table is more complex and includes cells that are merged and span several columns or rows. Both tables include the “scope” attribute that provides proper semantic markup for row or column headers.</p>
+	<li><h3>Tabele zawierają właściwe znaczniki dla nagłówków.</h3>
+		<p>W tym pliku znajdują się dwie tabele; pierwsza tabela ma prostą budowę z pojedynczym nagłówkiem tabeli dla górnego wiersza. Druga tabela jest bardziej złożona i zawiera komórki, które są scalone i rozciągają się na kilka kolumn lub wierszy. Obie tabele zawierają atrybut „scope”, który zapewnia właściwe znaczniki semantyczne dla nagłówków wierszy lub kolumn.</p>
 	</li>
-	<li><h3>Language is properly defined.</h3>
-		<p>This file includes foreign language content. Screen readers support multiple languages and can switch on the fly when announcing content in different languages. The paragraph at the end of the file includes proper language assignment, which will ensure that screen readers will announce the content with proper pronunciation. </p>
+	<li><h3>Język jest właściwie zdefiniowany.</h3>
+		<p>Ten plik zawiera treść w języku obcym. Czytniki ekranu obsługują wiele języków i mogą przełączać się w locie podczas odczytywania treści w różnych językach. Akapit na końcu pliku zawiera właściwe przypisanie języka, co zapewni, że czytniki ekranu odczytają treść z poprawną wymową. </p>
 	</li>
 </ol>
 
 <h2>Word</h2>
-<p>These documents should be demonstrated using Microsoft Office 365 desktop client or the most current version of Microsoft Word.
+<p>Te dokumenty należy demonstrować za pomocą klienta desktopowego Microsoft Office 365 lub najnowszej wersji Microsoft Word.
 </p>
 
-<h3>Word - Inaccessible version</h3>
+<h3>Word — Wersja niedostępna</h3>
 
-<div class="exampleLink">Example document: <a href="documents/syllabus_NOTaccessible.docx">Word version - Not accessible</a></div>
+<div class="exampleLink">Przykładowy dokument: <a href="documents/syllabus_NOTaccessible.docx">Wersja Word — Niedostępna</a></div>
 
 <ol>
-	<li><h4>No headings.</h4> 
-		<p>Avoid using font styling to make text bigger and bold to appear as a heading. Using defined paragraph styles and headings creates the scaffolding that forms an outline of a document and allows a screen reader user to navigate from section to section, and heading to heading.</p>
-		<p>Expand the Styles Pane then select the checkbox that says, “Show Preview” at the bottom of the pane. This will reveal what styles, if any, are used in the document. Notice only Normal styling is applied.</p>
+	<li><h4>Brak nagłówków.</h4> 
+		<p>Unikaj używania stylizacji czcionki, aby powiększyć i pogrubić tekst tak, by wyglądał jak nagłówek. Używanie zdefiniowanych stylów akapitów i nagłówków tworzy rusztowanie, które stanowi strukturę dokumentu i pozwala użytkownikowi czytnika ekranu nawigować od sekcji do sekcji oraz od nagłówka do nagłówka.</p>
+		<p>Rozwiń panel stylów (Styles Pane), a następnie zaznacz pole wyboru „Show Preview” u dołu panelu. Ujawni to, jakie style — jeśli w ogóle — są używane w dokumencie. Zauważ, że zastosowano tylko styl Normal.</p>
 	</li>
-	<li><h4>No alt text for meaningful images.</h4> 
-		<p>One image is included in this document, the logo at the top of the page, which does not have alternative text assigned to it. Visual content that is meaningful must have alt text associated with it so all users have access to the content.</p>
-		<p>Expose the alt text panel to reveal the empty text field. This can also be demonstrated by running the built in Accessibility Checker, this will be flagged as an error.</p>
+	<li><h4>Brak tekstu alternatywnego dla znaczących obrazów.</h4> 
+		<p>W tym dokumencie znajduje się jeden obraz — logo na górze strony — który nie ma przypisanego tekstu alternatywnego. Treść wizualna, która jest znacząca, musi mieć powiązany tekst alternatywny, aby wszyscy użytkownicy mieli dostęp do treści.</p>
+		<p>Wyświetl panel tekstu alternatywnego, aby odsłonić puste pole tekstowe. Można to również zademonstrować, uruchamiając wbudowany Accessibility Checker — zostanie to oznaczone jako błąd.</p>
 	</li>
-	<li><h4>List is not created using the List feature.</h4> 
-		<p>The list in this document was created by inserting symbols for bullet points instead of using the bulleted list tool. This can be revealed when the “Show Preview” checkbox is selected in the Styles pane.</p>
+	<li><h4>Lista nie została utworzona za pomocą funkcji listy.</h4> 
+		<p>Lista w tym dokumencie została utworzona przez wstawienie symboli punktorów zamiast użycia narzędzia listy punktowanej. Można to ujawnić, gdy zaznaczone jest pole wyboru „Show Preview” w panelu stylów (Styles Pane).</p>
 	</li>
-	<li><h4>Tables do not have headers defined; table includes merged table cells.</h4> 
-		<p>Assistive technology will read a table from left to right starting at the top. If the relationship between the cells is not defined, then the table is not formatted correctly.</p>
-		<p>Reveal the Table Properties dialog window by selecting the Layout tab from the ribbon, then select the Properties icon. In the Table Properties window, select the Row tab; under Options, be sure the checkboxes labeled “Allow row to break across pages” and “Repeat as header row at the top of each page” are checked.</p>
-		<p>This document also contains a complex table with merged cells, tables that contain merged or split cells can cause challenges for screen readers. Using a keyboard, place focus in the first table cell, then use the tab key to emulate what it might be like for a screen reader to access the information in the table. Is the reading order logical?</p>
+	<li><h4>Tabele nie mają zdefiniowanych nagłówków; tabela zawiera scalone komórki.</h4> 
+		<p>Technologia wspomagająca odczyta tabelę od lewej do prawej, zaczynając od góry. Jeśli relacja między komórkami nie jest zdefiniowana, to tabela nie jest poprawnie sformatowana.</p>
+		<p>Odsłoń okno dialogowe Table Properties, wybierając zakładkę Layout ze wstążki, a następnie wybierając ikonę Properties. W oknie Table Properties wybierz zakładkę Row; w sekcji Options upewnij się, że pola wyboru „Allow row to break across pages” oraz „Repeat as header row at the top of each page” są zaznaczone.</p>
+		<p>Ten dokument zawiera również złożoną tabelę ze scalonymi komórkami; tabele zawierające scalone lub podzielone komórki mogą stwarzać wyzwania dla czytników ekranu. Używając klawiatury, umieść fokus w pierwszej komórce tabeli, a następnie użyj klawisza tab, aby zasymulować, jak może wyglądać dostęp czytnika ekranu do informacji w tabeli. Czy kolejność odczytu jest logiczna?</p>
 	</li>
-	<li><h4>Missing language assignment.</h4> 
-		<p>Notice the text at the bottom of the page is in a non-English language. Office flags some of the text with red squiggly lines underneath indicating a spelling error. An English speaking screen reader will announce this content with improper pronunciation. To define the language of the page, go to the Language dialog, accessible from the Review tab in the Ribbon.</p>
+	<li><h4>Brak przypisania języka.</h4> 
+		<p>Zauważ, że tekst u dołu strony jest w języku innym niż angielski. Office oznacza część tekstu czerwonymi falistymi liniami, wskazując błąd pisowni. Anglojęzyczny czytnik ekranu odczyta tę treść z niepoprawną wymową. Aby zdefiniować język strony, przejdź do okna dialogowego Language, dostępnego z zakładki Review na wstążce.</p>
 	</li>
 </ol>
 
-<h3>Word - Accessible version</h3>
+<h3>Word — Wersja dostępna</h3>
 
-<div class="exampleLink">Example document: <a href="documents/syllabus_accessible.docx">Word version - Accessible</a></div>
+<div class="exampleLink">Przykładowy dokument: <a href="documents/syllabus_accessible.docx">Wersja Word — Dostępna</a></div>
 
 <ol>
-	<li><h4>Headings are present.</h4>
+	<li><h4>Nagłówki są obecne.</h4>
 		<p>
-			This document uses Paragraph Styles, which provide anchor points for screen readers to navigate by. Expand the Styles pane and select the checkbox that says “Show Preview" at the bottom of the pane to reveal the styles used to author the document. Styles can be modified by highlighting text, then selecting the paragraph style dropdown menu and choosing “Update Heading to Match Selection.”
+			Ten dokument używa stylów akapitów (Paragraph Styles), które zapewniają punkty zaczepienia, po których czytniki ekranu mogą nawigować. Rozwiń panel stylów (Styles Pane) i zaznacz pole wyboru „Show Preview” u dołu panelu, aby odsłonić style użyte do utworzenia dokumentu. Style można modyfikować, zaznaczając tekst, a następnie wybierając menu rozwijane stylu akapitu i wybierając „Update Heading to Match Selection”.
 		</p>
-		<p>When using Styles, this provides an outline that is automatically used when initiating the Table of Contents tool in the References tab of Word. For longer documents of 10 pages or more, using styles in combination with Table of Contents provides additional navigation aids that will benefit all users.
+		<p>Używanie stylów zapewnia strukturę, która jest automatycznie wykorzystywana podczas uruchamiania narzędzia spisu treści (Table of Contents) w zakładce References programu Word. W przypadku dłuższych dokumentów liczących 10 stron lub więcej, używanie stylów w połączeniu ze spisem treści zapewnia dodatkowe pomoce nawigacyjne, które przyniosą korzyść wszystkim użytkownikom.
 		</p>
 	</li>
-	<li><h4>Alt text is included for images.</h4>
+	<li><h4>Tekst alternatywny jest dołączony do obrazów.</h4>
 		<p>
-			The logo at the top of the document includes alternative text. Expose the alt text panel to display a text field where the user can review the description of the visual content.
+			Logo na górze dokumentu zawiera tekst alternatywny. Wyświetl panel tekstu alternatywnego, aby pokazać pole tekstowe, w którym użytkownik może przejrzeć opis treści wizualnej.
 		</p>
-		<p>Also included on this panel is a button for generating automated alt text, selecting this will initiate Microsoft’s AI for creating alt text. Review results of auto generated alt text for accuracy.</p>
-		<p>Any images included in a document that do not have significant meaning should be marked as decorative by selecting the checkbox, “Mark as decorative.”
-		</p>
-	</li>
-	<li><h4>List created using proper tool.</h4>
-		<p>
-			When encountering lists in a Word document, screen readers will announce how many items are included in a list if the proper tool was used to create it. Be sure to use the bulleted list tool to create bulleted lists, the numbered list tool to create numerical lists, and the multi-level list tool to create nested lists. Using the multi-level list tool to create nested lists will allow screen readers to accurately announce the number of list items, and where the user focus is located in the list and subsequent sub lists.
+		<p>W tym panelu znajduje się również przycisk do generowania automatycznego tekstu alternatywnego; jego wybranie uruchomi sztuczną inteligencję firmy Microsoft do tworzenia tekstu alternatywnego. Sprawdź wyniki automatycznie wygenerowanego tekstu alternatywnego pod kątem dokładności.</p>
+		<p>Wszelkie obrazy zawarte w dokumencie, które nie mają istotnego znaczenia, powinny zostać oznaczone jako dekoracyjne przez zaznaczenie pola wyboru „Mark as decorative”.
 		</p>
 	</li>
-	<li><h4>Tables include headers.</h4>
+	<li><h4>Lista utworzona za pomocą właściwego narzędzia.</h4>
 		<p>
-			Reveal the Table Properties dialog window by selecting the table, then selecting the Table Layout tab and choosing the Properties icon. On the Table Properties window, select the Row tab. Under Options, the checkbox for “Allow row to break across pages” should be unchecked. A good table should not contain a data cell that spans more than one page. Also notice the checkbox for, “Repeat as header row at the top of each page” should be checked. Selecting this option defines the top row of the table as a header row and announces table data in a meaningful way. 
+			Napotykając listy w dokumencie Word, czytniki ekranu ogłoszą, ile elementów znajduje się na liście, jeśli do jej utworzenia użyto właściwego narzędzia. Pamiętaj, aby używać narzędzia listy punktowanej do tworzenia list punktowanych, narzędzia listy numerowanej do tworzenia list liczbowych oraz narzędzia listy wielopoziomowej do tworzenia list zagnieżdżonych. Używanie narzędzia listy wielopoziomowej do tworzenia list zagnieżdżonych pozwoli czytnikom ekranu dokładnie ogłaszać liczbę elementów listy oraz miejsce, w którym znajduje się fokus użytkownika na liście i kolejnych podlistach.
 		</p>
 	</li>
-	<li><h4>Proper language identification.</h4>
+	<li><h4>Tabele zawierają nagłówki.</h4>
 		<p>
-			Notice the text at the bottom of the page is a foreign language. Screen readers support multiple languages and can switch on the fly when announcing content in different languages. For most documents, the default language is English, for all other languages, be sure to set the language attribute from the Review ribbon so that assistive technology announces the content accurately.
+			Odsłoń okno dialogowe Table Properties, wybierając tabelę, a następnie wybierając zakładkę Table Layout i wybierając ikonę Properties. W oknie Table Properties wybierz zakładkę Row. W sekcji Options pole wyboru „Allow row to break across pages” powinno być odznaczone. Dobra tabela nie powinna zawierać komórki danych, która rozciąga się na więcej niż jedną stronę. Zauważ również, że pole wyboru „Repeat as header row at the top of each page” powinno być zaznaczone. Wybranie tej opcji definiuje górny wiersz tabeli jako wiersz nagłówkowy i ogłasza dane tabeli w znaczący sposób. 
+		</p>
+	</li>
+	<li><h4>Właściwe określenie języka.</h4>
+		<p>
+			Zauważ, że tekst u dołu strony jest w języku obcym. Czytniki ekranu obsługują wiele języków i mogą przełączać się w locie podczas odczytywania treści w różnych językach. W przypadku większości dokumentów językiem domyślnym jest angielski; w przypadku wszystkich innych języków pamiętaj, aby ustawić atrybut języka ze wstążki Review, tak aby technologia wspomagająca dokładnie odczytywała treść.
 		</p>
 	</li>
 </ol>
 
 <h2>PDF</h2>
-<p>These documents should be demonstrated using Adobe Acrobat Pro DC or another application that will allow participants to view the Tags, Reading Order, and Content panels.</p>
+<p>Te dokumenty należy demonstrować za pomocą Adobe Acrobat Pro DC lub innej aplikacji, która umożliwi uczestnikom wyświetlanie paneli tagów (Tags), kolejności odczytu (Reading Order) i treści (Content).</p>
 
-<h3>PDF - Scanned version</h3>
+<h3>PDF — Wersja zeskanowana</h3>
 
-<div class="exampleLink">Example document: <a href="documents/syllabus_scanned.pdf">PDF version - Scanned</a></div>
+<div class="exampleLink">Przykładowy dokument: <a href="documents/syllabus_scanned.pdf">Wersja PDF — Zeskanowana</a></div>
 
 <ol>
-	<li><h4>Text is not selectable.</h4>
+	<li><h4>Tekst nie jest zaznaczalny.</h4>
 		<p>
-			PDF documents that were scanned using a flatbed scanner or captured using a mobile devices camera are usually saved as an image of the document. Try using a mouse to highlight text; notice how the text is not selectable. A screen reader will not be able to access any of the content in this document.
+			Dokumenty PDF, które zostały zeskanowane za pomocą skanera płaskiego lub sfotografowane aparatem urządzenia mobilnego, są zwykle zapisywane jako obraz dokumentu. Spróbuj użyć myszy, aby zaznaczyć tekst; zauważ, że tekst nie jest zaznaczalny. Czytnik ekranu nie będzie w stanie uzyskać dostępu do żadnej treści w tym dokumencie.
 		</p>
-		<p>Optical Character Recognition (OCR) will need to be applied to this document to convert the page image to machine readable text.</p>
+		<p>Do tego dokumentu trzeba będzie zastosować optyczne rozpoznawanie znaków (OCR), aby przekonwertować obraz strony na tekst czytelny maszynowo.</p>
 	</li>
-	<li><h4>Tags are missing.</h4>
+	<li><h4>Brak tagów.</h4>
 		<p>
-			Exposing the tag tree, notice this document does not have tags. By exposing the Content panel and expanding the page information in the panel, notice there is no text present, only images.
+			Odsłaniając drzewo tagów, zauważ, że ten dokument nie ma tagów. Odsłaniając panel Content i rozwijając informacje o stronie w panelu, zauważ, że nie ma tam żadnego tekstu, tylko obrazy.
 		</p>
 	</li>
 </ol>
 
-<h3>PDF - Inaccessible version</h3>
+<h3>PDF — Wersja niedostępna</h3>
 
-<div class="exampleLink">Example document: <a href="documents/syllabus_NOTaccessible.pdf">PDF version - Not Accessible</a></div>
+<div class="exampleLink">Przykładowy dokument: <a href="documents/syllabus_NOTaccessible.pdf">Wersja PDF — Niedostępna</a></div>
 
 <ol>
-	<li><h4>Text is selectable.</h4>
+	<li><h4>Tekst jest zaznaczalny.</h4>
 		<p>
-			Text can be highlighted, or selected, using a mouse, indicating screen readers can access the content.
+			Tekst można wyróżnić lub zaznaczyć za pomocą myszy, co wskazuje, że czytniki ekranu mogą uzyskać dostęp do treści.
 		</p>
 	</li>
-	<li><h4>Tags are missing.</h4>
+	<li><h4>Brak tagów.</h4>
 		<p>
-			Exposing the tag tree, notice this document also does not have tags. Extra: by exposing the Content panel and expanding the page, notice there is text present. Screen readers and assistive technologies will announce this text, but without tags, semantic structure is not available and navigation aids are missing causing barriers to understanding the information.
+			Odsłaniając drzewo tagów, zauważ, że ten dokument również nie ma tagów. Dodatkowo: odsłaniając panel Content i rozwijając stronę, zauważ, że tekst jest obecny. Czytniki ekranu i technologie wspomagające odczytają ten tekst, ale bez tagów struktura semantyczna nie jest dostępna, a pomoce nawigacyjne są niedostępne, co powoduje bariery w zrozumieniu informacji.
 		</p>
 	</li>
 </ol>
 
-<h3>PDF - Accessible version</h3>
+<h3>PDF — Wersja dostępna</h3>
 
-<div class="exampleLink">Example document: <a href="documents/syllabus_accessible.pdf">PDF version - Accessible</a></div>
+<div class="exampleLink">Przykładowy dokument: <a href="documents/syllabus_accessible.pdf">Wersja PDF — Dostępna</a></div>
 
 <ol>
-	<li><h4>Text is selectable.</h4>
+	<li><h4>Tekst jest zaznaczalny.</h4>
 		<p>
-			Text can be highlighted, or selected, using a mouse, indicating screen readers can access the textual content.
+			Tekst można wyróżnić lub zaznaczyć za pomocą myszy, co wskazuje, że czytniki ekranu mogą uzyskać dostęp do treści tekstowej.
 		</p>
 	</li>
-	<li><h4>Tags are present.</h4>
+	<li><h4>Tagi są obecne.</h4>
 		<p>
-			Expose the tag tree, notice this document has tags.
+			Odsłoń drzewo tagów, zauważ, że ten dokument ma tagi.
 		</p>
 	</li>
-	<li><h4>Tags are semantically accurate.</h4>
+	<li><h4>Tagi są semantycznie dokładne.</h4>
 		<p>
-			Place focus on the top <span class="element">&lt;Sect&gt;</span> tag, then use the down arrow key on a keyboard to walk down the tag tree. Notice that items highlighted in the tags panel are also highlighted in the document with a magenta rectangle. Tags are similar to HTML coding providing the proper semantic structure, screen readers will announce the text with proper context. Use the right arrow key on the keyboard to expand the tag to reveal the content of the semantic tag.
+			Umieść fokus na górnym tagu <span class="element">&lt;Sect&gt;</span>, a następnie użyj klawisza strzałki w dół na klawiaturze, aby zejść w dół drzewa tagów. Zauważ, że elementy wyróżnione w panelu tagów są również wyróżnione w dokumencie za pomocą karmazynowego prostokąta. Tagi są podobne do kodowania HTML, zapewniając właściwą strukturę semantyczną; czytniki ekranu odczytają tekst z właściwym kontekstem. Użyj klawisza strzałki w prawo na klawiaturze, aby rozwinąć tag i odsłonić treść tagu semantycznego.
 		</p>
 	</li>
-	<li><h4>Images include alternative text.</h4>
+	<li><h4>Obrazy zawierają tekst alternatywny.</h4>
 		<p>
-			The logo at the top of the document includes alternative text. From the tag tree, expose the Image content of the <span class="element">&lt;Figure&gt;</span> tag, then expose the Object Properties window. On the Tag tab, reveal the alt text in the center text field. Any images included in a document that do not have significant meaning should be artifacted using the Reading Order panel.
+			Logo na górze dokumentu zawiera tekst alternatywny. Z drzewa tagów odsłoń treść Image tagu <span class="element">&lt;Figure&gt;</span>, a następnie odsłoń okno Object Properties. Na zakładce Tag odsłoń tekst alternatywny w środkowym polu tekstowym. Wszelkie obrazy zawarte w dokumencie, które nie mają istotnego znaczenia, powinny zostać oznaczone jako artefakt za pomocą panelu Reading Order.
 		</p>
 	</li>
-	<li><h4>Tables include ID headers.</h4>
+	<li><h4>Tabele zawierają identyfikatory nagłówków.</h4>
 		<p>
-			From the tag tree, expose the first <span class="element">&lt;Table&gt;</span> parent tag, then expose the first <span class="element">&lt;TR&gt;</span> child tag, notice proper <span class="element">&lt;TH&gt;</span> child tags are included for the table header. </p>
+			Z drzewa tagów odsłoń pierwszy nadrzędny tag <span class="element">&lt;Table&gt;</span>, następnie odsłoń pierwszy podrzędny tag <span class="element">&lt;TR&gt;</span>, zauważ, że dla nagłówka tabeli uwzględniono właściwe podrzędne tagi <span class="element">&lt;TH&gt;</span>. </p>
 			<p>
-				The second table is more complex than the first table, requiring header IDs to properly identify column and row headers that span multiple cells. From the tag tree, expose the second <span class="element">&lt;Table&gt;</span> parent tag, then expose the first <span class="element">&lt;TR&gt;</span> child tag and review the Attributes and expand the Attribute Objects to reveal the <span class="element">&lt;&lt;Dictionary&gt;&gt;</span>.				
+				Druga tabela jest bardziej złożona niż pierwsza i wymaga identyfikatorów nagłówków, aby właściwie zidentyfikować nagłówki kolumn i wierszy, które rozciągają się na wiele komórek. Z drzewa tagów odsłoń drugi nadrzędny tag <span class="element">&lt;Table&gt;</span>, a następnie odsłoń pierwszy podrzędny tag <span class="element">&lt;TR&gt;</span> i przejrzyj atrybuty (Attributes) oraz rozwiń obiekty atrybutów (Attribute Objects), aby odsłonić <span class="element">&lt;&lt;Dictionary&gt;&gt;</span>.				
 			</p>
 	</li>
-	<li><h4>Proper language attribute.</h4>
+	<li><h4>Właściwy atrybut języka.</h4>
 		<p>
-			From the tag tree, expose the last <span class="element">&lt;P&gt;</span> tag of the foreign language text. Display the Object Properties window and reveal the correct Language attribute drop down at the bottom of the window.
+			Z drzewa tagów odsłoń ostatni tag <span class="element">&lt;P&gt;</span> tekstu w języku obcym. Wyświetl okno Object Properties i odsłoń poprawne menu rozwijane atrybutu Language u dołu okna.
 		</p>
 	</li>
 </ol>
 
 <h2>PowerPoint</h2>
-<p>These documents should be demonstrated using Microsoft Office 365 desktop client or the most recent version of Microsoft PowerPoint. It is also recommended to demonstrate these documents using the Microsoft Windows operating system.
+<p>Te dokumenty należy demonstrować za pomocą klienta desktopowego Microsoft Office 365 lub najnowszej wersji Microsoft PowerPoint. Zaleca się również demonstrowanie tych dokumentów w systemie operacyjnym Microsoft Windows.
 </p>
 
-<h3>PowerPoint - Inaccessible version (presentation_NOTaccessible.pptx)</h3>
+<h3>PowerPoint — Wersja niedostępna (presentation_NOTaccessible.pptx)</h3>
 
-<div class="exampleLink">Example document: <a href="documents/presentation_NOTaccessible.pptx">PowerPoint - Not accessible</a></div>
+<div class="exampleLink">Przykładowy dokument: <a href="documents/presentation_NOTaccessible.pptx">PowerPoint — Niedostępna</a></div>
 
 <ol>
-	<li><h4>No alt text for meaningful images; non-meaningful images are not marked as decorative.</h4>
+	<li><h4>Brak tekstu alternatywnego dla znaczących obrazów; obrazy nieznaczące nie są oznaczone jako dekoracyjne.</h4>
 		<p>
-			Meaningful images are included on slides 1 and 2, select the image then expose the alt text panel to reveal no information in the alt text field. Non-meaningful images are included on slide 5, the diagram was created using SmartArt. Some screen readers will announce all of the elements of a SmartArt diagram including text and the colorful background rectangles (announced as diagrams), while other screen readers will announce nothing at all. 
+			Znaczące obrazy znajdują się na slajdach 1 i 2; wybierz obraz, a następnie wyświetl panel tekstu alternatywnego, aby odsłonić brak informacji w polu tekstu alternatywnego. Nieznaczące obrazy znajdują się na slajdzie 5, diagram został utworzony za pomocą SmartArt. Niektóre czytniki ekranu ogłoszą wszystkie elementy diagramu SmartArt, w tym tekst i kolorowe prostokąty tła (ogłaszane jako diagramy), podczas gdy inne czytniki ekranu nie ogłoszą nic. 
 		</p>
-		<p>It is possible to assign alt text to SmartArt, in which case screen readers will skip announcing the elements of the diagram and will announce the alt text insead. However, screen reader users are not able to navigate alt text, forcing the user to listen to the content from beginning to end. </p>
+		<p>Możliwe jest przypisanie tekstu alternatywnego do SmartArt, w którym to przypadku czytniki ekranu pominą ogłaszanie elementów diagramu i ogłoszą zamiast tego tekst alternatywny. Jednak użytkownicy czytników ekranu nie mogą nawigować po tekście alternatywnym, co zmusza użytkownika do wysłuchania treści od początku do końca. </p>
 	</li>
-	<li><h4>Uninformative link text.</h4>
+	<li><h4>Nieinformacyjny tekst łącza.</h4>
 		<p>
-			Slide 2 includes a live link, however this link is not meaningful as it includes the URL. 
+			Slajd 2 zawiera aktywne łącze, jednak to łącze nie jest znaczące, ponieważ zawiera adres URL. 
 		</p>
-		<p>Screen reader users can call up a list of links included in a document, if the active link text is not meaningful then the user may not be certain where that link will take them.</p>
+		<p>Użytkownicy czytników ekranu mogą wywołać listę łączy zawartych w dokumencie; jeśli tekst aktywnego łącza nie jest znaczący, to użytkownik może nie być pewien, dokąd zaprowadzi go to łącze.</p>
 	</li>
-	<li><h4>Reading order of slide content is not accurate.</h4>
+	<li><h4>Kolejność odczytu treści slajdu nie jest dokładna.</h4>
 		<p>
-			Slides 2 and 3 include content that is out of the expected reading order. Reveal the Reading Order panel (only available on winOS), select the Review tab, then select the Check Accessibility drop down and choose Reading Order Pane. Objects from the slide will appear in order from top to bottom. Placing focus at the top of the Reading Order pane and using the down arrow key on the keyboard to walk down the pane, notice that items highlighted in the Reading Order pane are also highlighted in the slide making it easy to identify slide contents.
+			Slajdy 2 i 3 zawierają treść, która jest poza oczekiwaną kolejnością odczytu. Odsłoń panel kolejności odczytu (Reading Order Pane) (dostępny tylko w winOS), wybierz zakładkę Review, a następnie wybierz menu rozwijane Check Accessibility i wybierz Reading Order Pane. Obiekty ze slajdu pojawią się w kolejności od góry do dołu. Umieszczając fokus na górze panelu Reading Order i używając klawisza strzałki w dół na klawiaturze, aby zejść w dół panelu, zauważ, że elementy wyróżnione w panelu Reading Order są również wyróżnione na slajdzie, co ułatwia identyfikację zawartości slajdu.
 		</p>
 		<p>
-			To check reading order on macOS, users must use the Selection Pane. Items in the Selection Pane are arranged in reverse order.
-		</p>
-	</li>
-	<li><h4>Language needs to be assigned.</h4>
-		<p>
-			Slide 3 contains content in a foreign language. Office flags some of the text with red squiggly lines underneath indicating a spelling error. An English speaking screen reader will announce this text with improper pronunciation.
+			Aby sprawdzić kolejność odczytu w systemie macOS, użytkownicy muszą użyć panelu Selection Pane. Elementy w panelu Selection Pane są ułożone w odwrotnej kolejności.
 		</p>
 	</li>
-	<li><h4>Tables inserted into slides can not have table headers assigned.</h4>
+	<li><h4>Należy przypisać język.</h4>
 		<p>
-			Slide 4 includes a table. Select the table, then select the Table Layout Tab from the Ribbon and notice that the Properties icon is not available.
+			Slajd 3 zawiera treść w języku obcym. Office oznacza część tekstu czerwonymi falistymi liniami, wskazując błąd pisowni. Anglojęzyczny czytnik ekranu odczyta ten tekst z niepoprawną wymową.
 		</p>
-		<p>Since this is a simple table with a single top header row, this table may not pose barriers to users of Assistive Technology. This can be confirmed by exposing the Table Design tab and reviewing the check box for Header Row is selected.</p>
 	</li>
-	<li><h4>SmartArt diagrams pose barriers</h4>
+	<li><h4>Tabele wstawione do slajdów nie mogą mieć przypisanych nagłówków tabeli.</h4>
 		<p>
-			Slide 5 includes a SmartArt diagram. These are challenging for screen readers to interpret and are not flagged in an Accessibility Report when using the built-in Accessibility Checker for Office.
+			Slajd 4 zawiera tabelę. Wybierz tabelę, a następnie wybierz zakładkę Table Layout ze wstążki i zauważ, że ikona Properties nie jest dostępna.
+		</p>
+		<p>Ponieważ jest to prosta tabela z pojedynczym górnym wierszem nagłówkowym, ta tabela może nie stwarzać barier dla użytkowników technologii wspomagającej. Można to potwierdzić, odsłaniając zakładkę Table Design i sprawdzając, czy pole wyboru Header Row jest zaznaczone.</p>
+	</li>
+	<li><h4>Diagramy SmartArt stwarzają bariery</h4>
+		<p>
+			Slajd 5 zawiera diagram SmartArt. Są one trudne do zinterpretowania dla czytników ekranu i nie są oznaczane w raporcie dostępności podczas korzystania z wbudowanego Accessibility Checker dla pakietu Office.
 		</p>
 	</li>
 </ol>
 
-<h3>PowerPoint - Accessible version (presentation_accessible.pptx)</h3>
+<h3>PowerPoint — Wersja dostępna (presentation_accessible.pptx)</h3>
 
-<div class="exampleLink">Example document: <a href="documents/presentation_accessible.pptx">PowerPoint - Accessible</a></div>
+<div class="exampleLink">Przykładowy dokument: <a href="documents/presentation_accessible.pptx">PowerPoint — Dostępna</a></div>
 <ol>
-	<li><h4>Alt text is included for meaningful images, non-meaningful images are marked as decorative.</h4>
+	<li><h4>Tekst alternatywny jest dołączony do znaczących obrazów, obrazy nieznaczące są oznaczone jako dekoracyjne.</h4>
 		<p>
-			Meaningful images are included on slides 1 and 2; select an image then expose the alt text panel to reveal the content in the text field. Multiple images on slide 2 are grouped; each image is marked as decorative while the group has alt text assigned. 
+			Znaczące obrazy znajdują się na slajdach 1 i 2; wybierz obraz, a następnie wyświetl panel tekstu alternatywnego, aby odsłonić treść w polu tekstowym. Wiele obrazów na slajdzie 2 jest zgrupowanych; każdy obraz jest oznaczony jako dekoracyjny, podczas gdy grupie przypisano tekst alternatywny. 
 		</p>
 	</li>
-	<li><h4>Informative link text.</h4>
+	<li><h4>Informacyjny tekst łącza.</h4>
 		<p>
-			Slide 2 includes a live link with meaningful text, indicating to screen reader users where that link may take them. This slide also includes an inactive link with the URL to share when presenting this information live, allowing participants to visit the link from their own devices in real time.
+			Slajd 2 zawiera aktywne łącze ze znaczącym tekstem, wskazującym użytkownikom czytników ekranu, dokąd może ich zaprowadzić to łącze. Ten slajd zawiera również nieaktywne łącze z adresem URL do udostępnienia podczas prezentowania tych informacji na żywo, co pozwala uczestnikom odwiedzić łącze z własnych urządzeń w czasie rzeczywistym.
 		</p>
 	</li>
-	<li><h4>Reading order is accurate.</h4>
+	<li><h4>Kolejność odczytu jest dokładna.</h4>
 		<p>
-			All slides pass logical reading order. This can be reviewed in the Reading Order Pane in winOS (reading order is top to bottom), or the Selection Pane in macOS (reading order is reverse, bottom to top).
+			Wszystkie slajdy przechodzą test logicznej kolejności odczytu. Można to przejrzeć w panelu Reading Order Pane w winOS (kolejność odczytu jest od góry do dołu) lub w panelu Selection Pane w macOS (kolejność odczytu jest odwrotna, od dołu do góry).
 		</p>
 	</li>
-	<li><h4>Language is properly applied to foreign language text.</h4>
+	<li><h4>Język jest właściwie zastosowany do tekstu w języku obcym.</h4>
 		<p>
-			Slide 3 contains content in a foreign language. Language assignment appears on the status bar in the lower left corner of the window; select to change.
+			Slajd 3 zawiera treść w języku obcym. Przypisanie języka pojawia się na pasku stanu w lewym dolnym rogu okna; wybierz, aby zmienić.
 		</p>
 	</li>
-	<li><h4>Using proper slide template.</h4>
+	<li><h4>Używanie właściwego szablonu slajdu.</h4>
 		<p>
-			Slide 5 uses a modified slide template that formats text in a similar way to using a SmartArt diagram but is completely accessible. Additional content added to the slide is presented in proper reading order and colorful background rectangles are marked as decorative in the Slide Master.
+			Slajd 5 używa zmodyfikowanego szablonu slajdu, który formatuje tekst w sposób podobny do użycia diagramu SmartArt, ale jest w pełni dostępny. Dodatkowa treść dodana do slajdu jest prezentowana we właściwej kolejności odczytu, a kolorowe prostokąty tła są oznaczone jako dekoracyjne we wzorcu slajdów (Slide Master).
 		</p>
 	</li>
 </ol>
@@ -377,11 +377,11 @@
 <footer>
   <div id="license">
     <div id="ccLogo">    
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencja Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
     </div>
-    <span>Accessible University</span> by <a href="http://washington.edu/accesscomputing/AU" property="cc:attributionName" rel="cc:attributionURL">University of Washington</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    <span>Accessible University</span> (Dostępny Uniwersytet) autorstwa <a href="http://washington.edu/accesscomputing/AU" property="cc:attributionName" rel="cc:attributionURL">University of Washington</a> jest objęty licencją <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 4.0 Międzynarodowe</a>.
   </div>
-  <p>This product was originally developed with support from the National Institute on Disability and Rehabilitation Research of the U.S. Department of Education (grant #H133D010306), and has been subsequently updated and maintained with support from the National Science Foundation (grants #CNS-0540615, CNS-0837508, CNS-1042260, CNS-1539179, and CNS-2137312). The contents do not necessarily represent the policies of the U.S. federal government, and you should not assume their endorsement.</p>
+  <p>Ten produkt został pierwotnie opracowany przy wsparciu National Institute on Disability and Rehabilitation Research amerykańskiego Department of Education (grant #H133D010306), a następnie był aktualizowany i utrzymywany przy wsparciu National Science Foundation (granty #CNS-0540615, CNS-0837508, CNS-1042260, CNS-1539179 oraz CNS-2137312). Treść nie musi odzwierciedlać polityki rządu federalnego Stanów Zjednoczonych i nie należy zakładać, że stanowi ona jego poparcie.</p>
 </footer>
 
 </body>

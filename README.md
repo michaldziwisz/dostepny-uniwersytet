@@ -1,4 +1,14 @@
-# Accessible University (AU) Demo Site 
+# Accessible University (AU) Demo Site
+
+> **Wersja polska / Polish translation.** Ta kopia witryny demonstracyjnej AU
+> została w całości przetłumaczona na język polski (strony HTML, napisy VTT,
+> komunikaty w skryptach oraz dokumenty Word/PowerPoint). Celowe błędy
+> dostępności obecne w wersji „Before / Przed” zostały zachowane — przetłumaczono
+> jedynie treść, bez naprawiania demonstrowanych problemów. Oryginał: University
+> of Washington (AccessComputing). Utwór na licencji CC BY-NC-SA 4.0 — tłumaczenie
+> udostępniane na tej samej licencji, z zachowaniem atrybucji, do celów
+> niekomercyjnych. Zobacz sekcję License poniżej.
+
 
 Accessible University (AU) is a fictional university home page designed to demonstrate a variety of common web design problems that result in visitors with disabilities being unable to access content or features. 
 
